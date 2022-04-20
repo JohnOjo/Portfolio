@@ -1,0 +1,153 @@
+@import '../../constants/colours.scss';
+
+.our-partners-container {
+    display: flex;
+    padding: 2% 0%;
+    background-color: $background-color;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.our-partners-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: rgba(69, 88, 128, 0.5);
+}
+
+.partners-list-container {
+    display: flex;
+    padding: 2% 10%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.technologies-used {
+    width: 10rem;
+    height: 10rem;
+}
+
+.bubbles {
+    width: 10rem;
+    height: 10rem;
+}
+
+.vision-mission-values-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 6% 2%;
+}
+
+.projects-container {
+    display: flex;
+    padding: 2% 0%;
+    background-color: $background-color;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.projects-left-container, .projects-right-container {
+    display: flex;
+    padding: 2% 0%;
+    background-color: $background-color;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.projects-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: rgba(69, 88, 128, 0.5);
+}
+
+.projects-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects-divider {
+    border-left: 4px solid rgba(69, 88, 128, 0.5);
+    height: 70%;
+}
+
+.who-are-we-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: rgba(69, 88, 128, 0.5);
+}
+
+.project-container {
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.project-image {
+    border-radius: 50%;
+    width: 12.5rem;
+    margin: 0.5rem;
+    box-shadow: 0rem 0.25rem 0.25rem $primary-color;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    color: rgba(69, 88, 128, 0.5);
+}
+
+.project-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-body {
+    font-size: 0.5rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.float-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.architecture-image {
+    width: 80%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .technologies-used {
+      animation: technologies-used-scale infinite 5s cubic-bezier(1, 1, 1, 1) alternate-reverse;
+    }
+}
+
+@keyframes technologies-used-scale {
+    from {
+      transform: scale(50%);
+    }
+}

@@ -1,0 +1,5 @@
+export const BIO = 'Bio'
+export const FAVOURTIE_PROJECTS = 'Favourite Projects'
+export const OTHER_PROJECTS = 'Other Projects'
+export const TECHNOLOGIES_USED = 'Technologies Used'
+export const SCROLL_ELEMENT = 'root'

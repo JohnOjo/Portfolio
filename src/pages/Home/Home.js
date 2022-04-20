@@ -35,7 +35,7 @@ export default class Home extends Component {
     renderProject(profile, index) {
         return(
             <div className={'project-container'} key={index}>
-                <img className={'project-image'} src={profile?.image} alt={'profile'}/>
+                <img className={'project-image'} src={profile?.image} alt={'project'}/>
                 <div className={'project-text-container'}>
                     <div className={'project-title'}>{profile?.title}</div>
                     {this.generateProjectInfo(profile?.body)}

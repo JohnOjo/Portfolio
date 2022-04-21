@@ -34,11 +34,59 @@
     height: 10rem;
 }
 
-.vision-mission-values-container {
+.about-me-container {
     display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 2% 2%;
+}
+
+.about-me-bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    row-gap: 1.5rem;
-    padding: 6% 2%;
+}
+
+.about-me-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: $body-text-color;
+}
+
+.about-me-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: $body-text-color;
+}
+
+.about-me-image {
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: 0rem 0.25rem 0.25rem $primary-color;
+    animation: orbit-shadow 5s linear infinite;
+}
+
+@keyframes orbit-shadow {
+  0% {
+    box-shadow: 0rem 0.25rem 0.25rem $primary-color;
+  }
+  25% {
+    box-shadow: -0rem 0.25rem 0.25rem $primary-color;
+  }
+  50% {
+    box-shadow: -0rem -0.25rem 0.25rem $primary-color;
+  }
+  75% {
+    box-shadow: 0rem -0.25rem 0.25rem $primary-color;
+  }
+  100% {
+    box-shadow: 0rem 0.25rem 0.25rem $primary-color;
+  }
 }
 
 .projects-container {
@@ -111,6 +159,7 @@
     width: 12.5rem;
     margin: 0.5rem;
     box-shadow: 0rem 0.25rem 0.25rem $primary-color;
+    animation: orbit-shadow 5s linear infinite;
 }
 
 .project-title {

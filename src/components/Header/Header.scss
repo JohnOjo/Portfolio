@@ -73,7 +73,7 @@ $animate: all 0.4s ease-in-out;
     font-size: 1.6rem;
     width: 0;
     animation: 
-      typing 2s steps(20, end) forwards,
+      typing 5s steps(20, end) infinite,
       blink 1s infinite;
 }
 

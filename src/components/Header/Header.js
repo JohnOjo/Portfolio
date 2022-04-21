@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import './Header.scss'
 import { BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED, SCROLL_ELEMENT } from '../../constants/headerConstants'
 
@@ -80,10 +79,6 @@ class Header extends Component {
             </div>
         )
     }
-}
-
-Header.propTypes = {
-    history: PropTypes.array,
 }
 
 export default (withRouter(Header))

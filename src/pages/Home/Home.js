@@ -170,11 +170,10 @@ export default class Home extends Component {
                 {/* <div className={'vision-mission-values-container'}>{this.generateVisionMissionValues(visionMissionValuesCards)}</div> */}
                 <div className={'about-me-container'}>
                     <div className={'about-me-bio'}>
-
+                        <div className={'about-me-title'}>{'Bio text'}</div>
+                        <div className={'about-me-description'}>{'Since the beginning of my degree I have been looking forward to doing Software Engineering. I wanted to combine different systems, mix the old and the new and especially combine mathematics and Information Technology. Mathematics has been the one subject that has been getting the best of students and IT is the new world that people want to be part of. I want to work with different people, create things that were just thoughts and improve life as a whole.'}</div>
                     </div>
-                    <div className={'about-me-image'}>
-
-                    </div>
+                    <img className={'about-me-image'} src={JohnImage} alt={'John'}/>
                 </div>
                 <div className={'projects-container'}>
                     <div className={'projects-title'}>{'Favourite Projects'}</div>

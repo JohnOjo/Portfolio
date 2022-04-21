@@ -23,7 +23,7 @@ jobs:
         id: deployment
         with:
           token: "${{ github.token }}"
-          target_url: https://Alfonzo28.github.io/ARL
+          target_url: https://JohnOjo.github.io/Portfolio
           environment: production
 
       - name: Use Node.js ${{ matrix.node-version }}

@@ -7,6 +7,12 @@ import NodeJs from '../../assets/nodejs.svg'
 import NetCore from '../../assets/net_core.svg'
 import ReactImage from '../../assets/react.svg'
 import Postgresql from '../../assets/postgresql.svg'
+import MongoDB from '../../assets/mongo_db.svg'
+import Docker from '../../assets/docker.png'
+import Express from '../../assets/express.png'
+import Prismic from '../../assets/prismic.svg'
+import Heroku from '../../assets/heroku.svg'
+import SendGrid from '../../assets/send_grid.png'
 import Header from '../../components/Header/Header'
 import JohnImage from '../../assets/JohnImage.jpg'
 
@@ -17,15 +23,18 @@ export default class Home extends Component {
         )
     }
 
-    renderProject(profile, index) {
+    renderProject(project, index) {
         return(
             <div className={'other-project-container'} key={index}>
                 <div className={'project-container'} key={index}>
-                    <img className={'project-image'} src={profile?.image} alt={'project'}/>
+                    <div className={'project-image'}>{project?.title?.[0]}</div>
                     <div className={'project-text-container'}>
-                        <div className={'project-title'}>{profile?.title}</div>
-                        {this.generateProjectInfo(profile?.body)}
+                        <div className={'project-title'}>{project?.title}</div>
+                        {this.generateProjectInfo(project?.body)}
                     </div>
+                </div>
+                <div className={'project-technologies-used-list-container project-technologies-margin'}>
+                    {this.generateProjectTechnologies(project?.technologiesUsedImages)}
                 </div>
                 <div className={'projects-divider'}></div>
             </div>
@@ -61,8 +70,14 @@ export default class Home extends Component {
     generateProjectTechnologies(technologies) {
         if (technologies?.length > 0) {
             return technologies.map((technology, index) => {
+                // let className='project-technologies-used'
+                // const bounce = ' bounce'
+                // setTimeout(()=>{
+                //     className += bounce
+                //     console.log(' ^^^^^^^^^^^^^^^^ ')
+                // }, index+1*1000)
                 return(
-                    <img className={'project-technologies-used'} src={technology} alt={'technology'} key={index}/>
+                    <img className={'project-technologies-used bounce'} src={technology} alt={'technology'} key={index}/>
                 )
             })
         }
@@ -73,10 +88,13 @@ export default class Home extends Component {
             return favouriteProjects.map((favouriteProject, index) => {
                 return(
                     <div className={'favourite-project-container'} key={index}>
-                        <div className={'project-title'}>{favouriteProject?.projectTitle}</div>
-                        <ul className={'solving-problem-list'}>
-                            {this.generateProjectInfo(favouriteProject?.projectInfo)}
-                        </ul>
+                        <div className={'project-container'}>
+                            <div className={'project-image'}>{favouriteProject?.projectTitle?.[0]}</div>
+                            <div className={'project-text-container'}>
+                                <div className={'project-title'}>{favouriteProject?.projectTitle}</div>
+                                {this.generateProjectInfo(favouriteProject?.projectInfo)}
+                            </div>
+                        </div>
                         <div className={'project-technologies-used-list-container'}>
                             {this.generateProjectTechnologies(favouriteProject?.technologiesUsedImages)}
                         </div>
@@ -96,27 +114,27 @@ export default class Home extends Component {
 
         const favouriteProjects = [
             {
-                projectTitle:'Bookings and Claims Project',
-                projectInfo: [
+                title:'Bookings and Claims Project',
+                body: [
                     'Description: An office and events bookings,  as well as claims web application, following a microservices architecture. ',
                     'Role: Technical Team Lead, Managed 32 graduates',
                     'Tasks: Drew up solution architecture, setup cloud environment, deployments , setup server, managed team, scoped out project features, reviewed pull requests.',
-                    'Tech: Angular 12, .NET 5, PostgreSQL, AWS EC2, AWS S3, AWS RDS',
+                    'Tech: Angular 12, .NET 5, PostgreSQL, AWS (EC2, S3, RDS, ELB, Route53, Certificate Manager)',
                     'Worked in a team environment'
                 ],
-                technologiesUsedImages:[Angular, NetCore, AmazonWebServices, Postgresql],
+                technologiesUsedImages:[Angular, NetCore, Postgresql, AmazonWebServices],
                 extraProjectInfo: ''
             },
             {
-                projectTitle:'Designer\'s Portfolio',
-                projectInfo: [
+                title:'Designer\'s Portfolio',
+                body: [
                     'Description: Created a web application of a designer\'s portfolio to showcase their designs and experience.',
                     'Role: Fullstack developer.',
                     'Tasks: Setup cloud environment, setup CI/CD pipelines, developed fronted, developed backend, mobile responsiveness, setup email server.',
-                    'Tech: React (jsx), NodeJS (javascript), Github Pages, Github Actions, Heroku',
+                    'Tech: React (jsx), NodeJS (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
                     'Worked as sole developer.'
                 ],
-                technologiesUsedImages:[ReactImage, NodeJs, AmazonWebServices, Postgresql],
+                technologiesUsedImages:[ReactImage, NodeJs, Express, SendGrid, Heroku],
                 extraProjectInfo: ''
             }
         ]
@@ -127,30 +145,30 @@ export default class Home extends Component {
                 body: [
                     'Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Tasks: Builded up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
-                    'Tech: React-Redux, NodeJs (TypeScript), Express, Postgresql, TypeORM, AWS S3, Prismic',
+                    'Tech: React-Redux, NodeJs (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[ReactImage, NodeJs, Express, Postgresql, AmazonWebServices, Prismic],
             },
             {
                 title: 'Security/Auditing Project',
                 body: [
                     'Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
-                    'Tech: Angular 9, NodeJs (javascript), Express, MongoDB, Mongoose, Jenkins, Redis',
+                    'Tech: Angular 9, NodeJs (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[Angular, NodeJs, Express, MongoDB, AmazonWebServices],
             },
             {
                 title: 'Mining Project',
                 body: [
                     'Opportunity application system for applying to projects provided by the mining sector.',
                     'Tasks: Created front-end components and pages, created file upload and download functionality, setup server and created APIs to save and retrieve data.',
-                    'Tech: Angular 9, NodeJs (JavaScript), Express, Postgresql, Sequelize, AWS S3',
+                    'Tech: Angular 9, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, AmazonWebServices],
             }
         ]
         const projectsRight = [
@@ -162,31 +180,31 @@ export default class Home extends Component {
                     'Tech: React',
                     'Worked in a team environment'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[ReactImage],
             },
             {
                 title: 'Reporting Project ',
                 body: [
                     'Reporting system to view historical and forecasted data of a sector/industry given a scenario to measure the growth or decline of the sector/industry. Application is in English and Arabic (right to left reading).',
                     'Tasks: Created front-end components and pages, created GeoMap and plotted boundaries on communities, created light and dark mode, created graph filters and queries, wrote automated tests, created email server, created script to translate english to arabic and created APIs to save and retrieve data.',
-                    'Tech: React-Redux, NodeJs (TypeScript), Express, Postgresql, TypeORM, AWS S3, Prismic',
+                    'Tech: Angular 11, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
                     'Worked in a team environment.'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, MongoDB],
             },
             {
-                pretitle: 'Security/Auditing Project',
+                title: 'Security/Auditing Project',
                 body: [
                     'Assessment system to assess controls in a system and view statistical data on the assessed controls.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
-                    'Tech: Angular 9, NodeJs (JavaScript), Express, MongoDB, Mongoose, AWS S3',
+                    'Tech: Angular 9, NodeJs (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
                 ],
-                image: JohnImage
+                technologiesUsedImages:[Angular, NodeJs, Express, MongoDB, AmazonWebServices],
             }
         ]
 
-        const technologiesUsed = [Angular, ReactImage, NodeJs, NetCore, AmazonWebServices, Postgresql]
+        const technologiesUsed = [Angular, ReactImage, NodeJs, NetCore, AmazonWebServices, Postgresql, MongoDB, Docker, Prismic, Express]
 
         return (
             <div className={'App'}>
@@ -202,7 +220,7 @@ export default class Home extends Component {
                 {this.renderBubbles()}
                 <div className={'projects-container'}>
                     <div className={'projects-title'}>{'Favourite Projects'}</div>
-                    {this.generateFavouriteProjects(favouriteProjects)}
+                    {this.generateProjects(favouriteProjects)}
                 </div>
                 <div className={'float-right'}>
                     {this.renderBubbles()}
@@ -219,9 +237,9 @@ export default class Home extends Component {
                     </div>
                 </div>
                 {this.renderBubbles()}
-                <div className={'our-partners-container'}>
-                    <div className={'our-partners-title'}>{technologiesUsedTitle}</div>
-                    <div className={'partners-list-container'}>
+                <div className={'technologies-container'}>
+                    <div className={'technologies-title'}>{technologiesUsedTitle}</div>
+                    <div className={'technologies-list-container'}>
                         {this.generateTechnologies(technologiesUsed)}
                     </div>
                 </div>

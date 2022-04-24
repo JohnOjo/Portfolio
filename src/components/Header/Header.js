@@ -40,21 +40,21 @@ class Header extends Component {
             break
         case FAVOURTIE_PROJECTS:
             window.scrollTo({
-                top: pageHeight * 0.25,
+                top: pageHeight * 0.1,
                 left: 0,
                 behavior: 'smooth'
             })
             break
         case OTHER_PROJECTS:
             window.scrollTo({
-                top: pageHeight * 0.5,
+                top: pageHeight * 0.3,
                 left: 0,
                 behavior: 'smooth'
             })
             break
         case TECHNOLOGIES_USED:
             window.scrollTo({
-                top: pageHeight * 0.75,
+                top: pageHeight * 0.83,
                 left: 0,
                 behavior: 'smooth'
             })

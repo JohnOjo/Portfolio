@@ -219,9 +219,44 @@
     margin-left: 13rem;
 }
 
-.bounce {
+.bounce-0 {
     animation-name: bounce;
     animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+.bounce-1 {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+}
+
+.bounce-2 {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+}
+
+.bounce-3 {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-delay: 4s;
+}
+
+.bounce-4 {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-delay: 5s;
+}
+
+.bounce-5 {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-delay: 6s;
+}
+
+.link-info {
+    font-weight: bold;
 }
 
 @keyframes bounce {

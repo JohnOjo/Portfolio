@@ -23,6 +23,12 @@ export default class Home extends Component {
         )
     }
 
+    generateProjects(profiles) {
+        if (profiles?.length > 0) {
+            return profiles.map((profile, index) => this.renderProject(profile, index))
+        }
+    }
+
     renderProject(project, index) {
         return(
             <div className={'other-project-container'} key={index}>
@@ -36,25 +42,16 @@ export default class Home extends Component {
                 <div className={'project-technologies-used-list-container project-technologies-margin'}>
                     {this.generateProjectTechnologies(project?.technologiesUsedImages)}
                 </div>
+                {project?.extraProjectInfo &&
+                <div className={'project-text-container'}>
+                    {this.generateProjectInfo(project?.extraProjectInfo)}
+                    <br/>
+                    {this.generateLinks(project?.links)}
+                </div>
+                }
                 <div className={'projects-divider'}></div>
             </div>
         )
-    }
-
-    generateTechnologies(partners) {
-        if (partners?.length > 0) {
-            return partners.map((partner, index) => {
-                return(
-                    <img className={'technologies-used'} src={partner} alt={'technology'} key={index}/>
-                )
-            })
-        }
-    }
-
-    generateProjects(profiles) {
-        if (profiles?.length > 0) {
-            return profiles.map((profile, index) => this.renderProject(profile, index))
-        }
     }
 
     generateProjectInfo(whoIsItFor) {
@@ -67,38 +64,33 @@ export default class Home extends Component {
         }
     }
 
-    generateProjectTechnologies(technologies) {
-        if (technologies?.length > 0) {
-            return technologies.map((technology, index) => {
-                // let className='project-technologies-used'
-                // const bounce = ' bounce'
-                // setTimeout(()=>{
-                //     className += bounce
-                //     console.log(' ^^^^^^^^^^^^^^^^ ')
-                // }, index+1*1000)
+    generateTechnologies(partners) {
+        if (partners?.length > 0) {
+            return partners.map((partner, index) => {
                 return(
-                    <img className={'project-technologies-used bounce'} src={technology} alt={'technology'} key={index}/>
+                    <img className={'technologies-used'} src={partner} alt={'technology'} key={index}/>
                 )
             })
         }
     }
 
-    generateFavouriteProjects(favouriteProjects) {
-        if (favouriteProjects?.length > 0) {
-            return favouriteProjects.map((favouriteProject, index) => {
+    generateProjectTechnologies(technologies) {
+        if (technologies?.length > 0) {
+            return technologies.map((technology, index) => {
                 return(
-                    <div className={'favourite-project-container'} key={index}>
-                        <div className={'project-container'}>
-                            <div className={'project-image'}>{favouriteProject?.projectTitle?.[0]}</div>
-                            <div className={'project-text-container'}>
-                                <div className={'project-title'}>{favouriteProject?.projectTitle}</div>
-                                {this.generateProjectInfo(favouriteProject?.projectInfo)}
-                            </div>
-                        </div>
-                        <div className={'project-technologies-used-list-container'}>
-                            {this.generateProjectTechnologies(favouriteProject?.technologiesUsedImages)}
-                        </div>
-                        <div className={'projects-divider'}></div>
+                    <img className={'project-technologies-used bounce-'+index} src={technology} alt={'technology'} key={index}/>
+                )
+            })
+        }
+    }
+
+    generateLinks(links) {
+        if (links?.length > 0) {
+            return links.map((link, index) => {
+                return(
+                    <div key={index}>
+                        <div className={'link-info'}>{link?.info}&nbsp;</div>
+                        <a href={link?.link} >{link?.link}</a>
                     </div>
                 )
             })
@@ -108,7 +100,7 @@ export default class Home extends Component {
     render() {
         const technologiesUsedTitle = 'Technologies Used'
         const projectsTitle = 'Other Projects'
-        const bioTitle = 'Hi, my name is John Ojo'
+        const bioTitle = 'Hi, my name is John Ojo and I Solve Problems'
         const bioHeader = 'Intermediate Software Developer | Master\'s Student | AWS Certified'
         const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the the way things are done. Software development gave me the platform to do that.'
 
@@ -123,7 +115,7 @@ export default class Home extends Component {
                     'Worked in a team environment'
                 ],
                 technologiesUsedImages:[Angular, NetCore, Postgresql, AmazonWebServices],
-                extraProjectInfo: ''
+                extraProjectInfo: ['What I loved about this project is that it encompassed everything it takes to build an application and be a software developer. Development, hosting, working in a large team, thinking of cost implications, project management, project scoping, solution architecture, weighing up which method would give the most optimal solution, sharing information so the graduates can learn more and other aspects. I saw a different side to being a software developer other than just tech. You can learn any technology online or through a course, but learning to manage and understand people is a whole other different skill. It was a really great experience being on the project and the best part was seeing the graduates learn and grow into capable developers.']
             },
             {
                 title:'Designer\'s Portfolio',
@@ -134,12 +126,22 @@ export default class Home extends Component {
                     'Tech: React (jsx), NodeJS (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
                     'Worked as sole developer.'
                 ],
+                links:[
+                    {
+                        info: 'Link to website:',
+                        link: 'https://alfonzo28.github.io/ARL/#/'
+                    },
+                    {
+                        info: 'Github repo (source code):',
+                        link: 'https://github.com/Alfonzo28/ARL'
+                    },
+                ],
                 technologiesUsedImages:[ReactImage, NodeJs, Express, SendGrid, Heroku],
-                extraProjectInfo: ''
+                extraProjectInfo: ['What I enjoyed about this project was the amount of things I had to learn and figure out by myself as the sole developer. Having to build the front-end and back-end from scratch, having to host the application, having to set up CI/CD pipelines and other tasks. I had to solve problems by myself in terms of performance and what technologies would be most suitable. I had to take ownership and more responsibility in every aspect of the system. The experience really added to my skills and pushed me to keep on expanding my knowledge.']
             }
         ]
 
-        const projectsLeft = [
+        const projectsTop = [
             {
                 title: 'Medical Project',
                 body: [
@@ -171,7 +173,7 @@ export default class Home extends Component {
                 technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, AmazonWebServices],
             }
         ]
-        const projectsRight = [
+        const projectsBottom = [
             {
                 title: 'Financial Project',
                 body: [
@@ -229,10 +231,10 @@ export default class Home extends Component {
                     <div className={'projects-title'}>{projectsTitle}</div>
                     <div className={'projects-body'}>
                         <div className={'projects-left-container'}>
-                            {this.generateProjects(projectsLeft)}
+                            {this.generateProjects(projectsTop)}
                         </div>
                         <div className={'projects-right-container'}>
-                            {this.generateProjects(projectsRight)}
+                            {this.generateProjects(projectsBottom)}
                         </div>
                     </div>
                 </div>

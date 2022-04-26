@@ -39,7 +39,7 @@ export default class Home extends Component {
                         {this.generateProjectInfo(project?.body)}
                     </div>
                 </div>
-                <div className={'project-technologies-used-list-container project-technologies-margin'}>
+                <div className={'project-technologies-used-list-container'}>
                     {this.generateProjectTechnologies(project?.technologiesUsedImages)}
                 </div>
                 {project?.extraProjectInfo &&
@@ -88,9 +88,9 @@ export default class Home extends Component {
         if (links?.length > 0) {
             return links.map((link, index) => {
                 return(
-                    <div key={index}>
+                    <div className={'link-container'} key={index}>
                         <div className={'link-info'}>{link?.info}&nbsp;</div>
-                        <a href={link?.link} >{link?.link}</a>
+                        <a className={'link'} href={link?.link} >{link?.link}</a>
                     </div>
                 )
             })

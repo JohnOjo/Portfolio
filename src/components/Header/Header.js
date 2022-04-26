@@ -5,6 +5,9 @@ import { BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED, SCROLL_ELEM
 import MobileNavDropdown from '../../assets/mobile-nav-dropdown.svg'
 import MobileCloseDropdown from '../../assets/mobile-close-dropdown.svg'
 
+const headerButtons = [
+    BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED
+]
 class Header extends Component {
     constructor(props) {
         super(props)
@@ -44,9 +47,6 @@ class Header extends Component {
     }
 
     renderHeaderButtons() {
-        const headerButtons = [
-            BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED
-        ]
         return (
             headerButtons.map(headerButton=>this.renderHeaderButton(headerButton))
         )
@@ -89,6 +89,16 @@ class Header extends Component {
         }
     }
 
+    handleMobileDropdown() {
+        this.setState({ dropdownOpen: !this.state.dropdownOpen })
+    }
+
+    renderMobileHeaderButtons() {
+        return (
+            headerButtons.map(headerButton=>this.renderMobileHeaderButton(headerButton))
+        )
+    }
+
     renderMobileHeaderButton(headerButton) {
         return (
             <div
@@ -114,9 +124,6 @@ class Header extends Component {
                     </div>
                 </div>
                 <div className={'f-1'}/>
-                {/* <div className={'buttons-container'}>
-                    {this.renderHeaderButtons()}
-                </div> */}
                 {(!isDesktop && !this.state.dropdownOpen) && <img className={'dropdown'} src={MobileNavDropdown} alt={'dropdown'} onClick={() => this.handleMobileDropdown()}/>}
                 {isDesktop && this.renderHeaderButtons()}
                 {(!isDesktop && this.state.dropdownOpen) &&

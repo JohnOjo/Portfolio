@@ -38,6 +38,9 @@ export default class Home extends Component {
             <div className={'other-project-container'} key={index}>
                 <div className={'project-container'} key={index}>
                     <div className={'project-card-container'}>
+                        <div className={'project-card-chips-container'}>
+                            {this.generateChips(project?.chips)}
+                        </div>
                         <div className={'project-card-content slide'}>
                             <div className={'project-technologies-used-list-container'}>
                                 {this.generateProjectTechnologies(project?.technologiesUsedImages)}
@@ -109,6 +112,16 @@ export default class Home extends Component {
         this.setState({ showFavouriteProjects: showFavouriteProjects })
     }
 
+    generateChips(chips) {
+        if (chips?.length > 0) {
+            return chips.map((chip, index) => {
+                return(
+                    <div className={'chip-flexible-width'} key={index}>{chip}</div>
+                )
+            })
+        }
+    }
+
     render() {
         const technologiesUsedTitle = 'Technologies Used'
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
@@ -128,6 +141,7 @@ export default class Home extends Component {
                     'Worked in a team environment'
                 ],
                 technologiesUsedImages:[Angular, NetCore, Postgresql, AmazonWebServices],
+                chips: ['Angular 12', '.NET 5', 'PostgreSQL', 'AWS'],
                 extraProjectInfo: ['What I loved about this project is that it encompassed everything it takes to build an application and be a software developer. Development, hosting, working in a large team, thinking of cost implications, project management, project scoping, solution architecture, weighing up which method would give the most optimal solution, sharing information so the graduates can learn more and mentoring them. I saw a different side to being a software developer other than just tech. You can learn any technology online or through a course, but learning to manage and understand people is a whole other different skill. It was a really great experience being on the project and the best part was seeing the graduates learn and grow into capable developers.']
             },
             {
@@ -149,6 +163,7 @@ export default class Home extends Component {
                         link: 'https://github.com/Alfonzo28/ARL'
                     },
                 ],
+                chips: ['React', 'NodeJS', 'SendGrid', 'Heroku'],
                 technologiesUsedImages:[ReactImage, NodeJs, SendGrid, Heroku],
                 extraProjectInfo: ['What I enjoyed about this project was the amount of things I had to learn and figure out by myself as the sole developer. Having to build the front-end and back-end from scratch, having to host the application, having to set up CI/CD pipelines and other tasks. I had to solve problems by myself in terms of performance and what technologies would be most suitable. I had to take ownership and more responsibility in every aspect of the system. The experience really added to my skills and pushed me to keep on expanding my knowledge and continuously improve.']
             }
@@ -163,6 +178,7 @@ export default class Home extends Component {
                     'Tech: React-Redux, NodeJs (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],
+                chips: ['React', 'NodeJS', 'AWS', 'Prismic'],
                 technologiesUsedImages:[ReactImage, NodeJs, Postgresql, AmazonWebServices, Prismic],
             },
             {
@@ -173,6 +189,7 @@ export default class Home extends Component {
                     'Tech: Angular 9, NodeJs (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
+                chips: ['React', 'NodeJS', 'MongoDB', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             },
             {
@@ -183,6 +200,7 @@ export default class Home extends Component {
                     'Tech: Angular 9, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
                 ],
+                chips: ['Angular', 'NodeJS', 'Postgresql', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, Postgresql, AmazonWebServices],
             },
             {
@@ -193,6 +211,7 @@ export default class Home extends Component {
                     'Tech: React',
                     'Worked in a team environment'
                 ],
+                chips: ['React'],
                 technologiesUsedImages:[ReactImage],
             },
             {
@@ -203,6 +222,7 @@ export default class Home extends Component {
                     'Tech: Angular 11, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
                     'Worked in a team environment.'
                 ],
+                chips: ['Angular', 'NodeJS', 'Postgresql', 'MongoDB'],
                 technologiesUsedImages:[Angular, NodeJs, Postgresql, MongoDB],
             },
             {
@@ -213,6 +233,7 @@ export default class Home extends Component {
                     'Tech: Angular 9, NodeJs (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
                 ],
+                chips: ['Angular', 'NodeJS', 'MongoDB', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             }
         ]

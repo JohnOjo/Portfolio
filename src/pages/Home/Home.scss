@@ -162,7 +162,8 @@
     }
 }
 
-.project-card-container {
+.project-card-container {    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,17 +178,18 @@
 }
 
 .slide {
-    position: absolute;
-    left: -500px;
+    position: relative;
+    top: 100px;
     transition: 1s;
 }
 
 .project-container:hover .slide {
     transition: 1s;
-    left: 150px;
+    top: 200px;
 }
 
-.project-card-content {
+.project-card-content {    
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,6 +211,14 @@
         max-width: 8rem;
         height: 8rem;
     }
+}    
+
+.project-card-chips-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+    position: relative;
 }
 
 .project-title {
@@ -295,6 +305,7 @@
 
 .link {    
     word-break: break-all;
+    color: #4F94CD;
 }
 
 .chip-container {
@@ -305,13 +316,30 @@
     padding: 2% 4%;
 }
 
+.chip-flexible-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    width: fit-content;
+    padding: 0% 3%;
+    height: 1.5rem;
+    border: 0rem;
+    border-radius: 1.1875rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $body-text-color; 
+    white-space: nowrap;
+    box-shadow: 0rem 0.1rem 0.1rem $primary-light-color;
+}
+
 .chip {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $primary-color;
-    width: 217px;
-    height: 38px;
+    width: 13.5625rem;
+    height: 2.375rem;
     border: 0rem;
     border-radius: 1.1875rem;
     font-weight: 400;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './Home.scss'
-import Bubbles from '../../assets/Bubbles.svg'
 import Angular from '../../assets/angular.svg'
 import AmazonWebServices from '../../assets/amazon_web_services.svg'
 import NodeJs from '../../assets/nodejs.svg'
@@ -12,15 +11,19 @@ import Docker from '../../assets/docker.png'
 import Express from '../../assets/express.png'
 import Prismic from '../../assets/prismic.svg'
 import Heroku from '../../assets/heroku.svg'
+import NameInCode from '../../assets/name_in_code.svg'
 import SendGrid from '../../assets/send_grid.png'
 import Header from '../../components/Header/Header'
-import JohnImage from '../../assets/JohnImage.jpg'
+import JohnImage from '../../assets/john_image.svg'
+import TanEllipse from '../../assets/tan_ellipse.svg'
+import BrownEllipse from '../../assets/brown_ellipse.svg'
 
 export default class Home extends Component {
-    renderBubbles() {
-        return(
-            <img className={'bubbles'} src={Bubbles} alt={'ellipse'}/>
-        )
+    constructor(props) {
+        super(props)
+        this.state = {
+            showFavouriteProjects: true,
+        }
     }
 
     generateProjects(profiles) {
@@ -33,23 +36,29 @@ export default class Home extends Component {
         return(
             <div className={'other-project-container'} key={index}>
                 <div className={'project-container'} key={index}>
-                    <div className={'project-image'}>{project?.title?.[0]}</div>
+                    <div className={'project-card-container'}>
+                        <div className={'project-card-content'}>
+                            <div className={'chip'}>{'Favourite Projects'}</div>
+                            <div className={'project-card-title'}>
+                                {project?.title}
+                            </div>
+                        </div>
+                    </div>
                     <div className={'project-text-container'}>
                         <div className={'project-title'}>{project?.title}</div>
                         {this.generateProjectInfo(project?.body)}
-                    </div>
-                </div>
-                <div className={'project-technologies-used-list-container'}>
-                    {this.generateProjectTechnologies(project?.technologiesUsedImages)}
-                </div>
-                {project?.extraProjectInfo &&
+                        {project?.extraProjectInfo &&
                 <div className={'project-text-container'}>
                     {this.generateProjectInfo(project?.extraProjectInfo)}
                     <br/>
                     {this.generateLinks(project?.links)}
                 </div>
-                }
-                <div className={'projects-divider'}></div>
+                        }
+                    </div>
+                </div>
+                <div className={'project-technologies-used-list-container'}>
+                    {this.generateProjectTechnologies(project?.technologiesUsedImages)}
+                </div>
             </div>
         )
     }
@@ -58,7 +67,7 @@ export default class Home extends Component {
         if (whoIsItFor?.length > 0) {
             return whoIsItFor.map((bodyItem, index) => {
                 return(
-                    <li key={index}>{bodyItem}</li>
+                    <li className={'list'} key={index}>{bodyItem}</li>
                 )
             })
         }
@@ -97,12 +106,17 @@ export default class Home extends Component {
         }
     }
 
+    handleChipClick() {
+        this.setState({ showFavouriteProjects: !this.state.showFavouriteProjects })
+    }
+
     render() {
         const technologiesUsedTitle = 'Technologies Used'
-        const projectsTitle = 'Other Projects'
-        const bioTitle = 'Hi, my name is John Ojo and I Solve Problems'
-        const bioHeader = 'Intermediate Software Developer | Master\'s Student | AWS Certified'
+        const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
+        const bioSubTitleStart = 'Intermediate Software Developer |'
+        const bioSubTitleEnd = 'Master\'s Student | AWS Certified'
         const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the the way things are done. Software development gave me the platform to do that.'
+        const showFavouriteProjects = this.state.showFavouriteProjects
 
         const favouriteProjects = [
             {
@@ -141,7 +155,7 @@ export default class Home extends Component {
             }
         ]
 
-        const projectsTop = [
+        const otherProjects = [
             {
                 title: 'Medical Project',
                 body: [
@@ -171,9 +185,7 @@ export default class Home extends Component {
                     'Worked in a team environment.'
                 ],
                 technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, AmazonWebServices],
-            }
-        ]
-        const projectsBottom = [
+            },
             {
                 title: 'Financial Project',
                 body: [
@@ -213,40 +225,35 @@ export default class Home extends Component {
                 <Header/>
                 <div className={'about-me-container'}>
                     <div className={'about-me-bio'}>
+                        <img src={NameInCode} alt={'name'}></img>
                         <div className={'about-me-title'}>{bioTitle}</div>
-                        <div className={'about-me-subtitle'}>{bioHeader}</div>
+                        <div className={'about-me-subtitle'}>
+                            <div className={'about-me-subtitle-start'}>{bioSubTitleStart}&nbsp;</div>
+                            <div className={'about-me-subtitle-end'}>{bioSubTitleEnd}</div>
+                        </div>
                         <div className={'about-me-body'}>{bioBody}</div>
                     </div>
-                    <img className={'about-me-image'} src={JohnImage} alt={'John'}/>
-                </div>
-                {this.renderBubbles()}
-                <div className={'projects-container'}>
-                    <div className={'projects-title'}>{'Favourite Projects'}</div>
-                    {this.generateProjects(favouriteProjects)}
-                </div>
-                <div className={'float-right'}>
-                    {this.renderBubbles()}
-                </div>
-                <div className={'projects-container'}>
-                    <div className={'projects-title'}>{projectsTitle}</div>
-                    <div className={'projects-body'}>
-                        <div className={'projects-left-container'}>
-                            {this.generateProjects(projectsTop)}
-                        </div>
-                        <div className={'projects-right-container'}>
-                            {this.generateProjects(projectsBottom)}
-                        </div>
+                    <div className={'about-me-image-container'}>
+                        <img className={'about-me-tan-ellipse'} src={TanEllipse} alt={'Tan Ellipse'}/>
+                        <img className={'about-me-brown-ellipse'} src={BrownEllipse} alt={'Brown Ellipse'}/>
+                        <img className={'about-me-image'} src={JohnImage} alt={'John'}/>
                     </div>
                 </div>
-                {this.renderBubbles()}
                 <div className={'technologies-container'}>
                     <div className={'technologies-title'}>{technologiesUsedTitle}</div>
                     <div className={'technologies-list-container'}>
                         {this.generateTechnologies(technologiesUsed)}
                     </div>
                 </div>
-                <div className={'float-right'}>
-                    {this.renderBubbles()}
+                <div className={'projects-container'}>
+                    <div className={'projects-title'}>{'Portfolio'}</div>
+                    <div className={'my-work-title'}>{'MY WORK'}</div>
+                    <div className={'chip-container'}>
+                        <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick()}>{'Favourite Projects'}</div>
+                        <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick()}>{'All Projects'}</div>
+                    </div>
+                    <div className={'projects-title'}>{showFavouriteProjects ? 'Favourite Projects':'Other Projects'}</div>
+                    {this.generateProjects(showFavouriteProjects ? favouriteProjects:otherProjects)}
                 </div>
             </div>
         )

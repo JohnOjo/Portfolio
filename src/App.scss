@@ -13,7 +13,9 @@
 html, body, #root, .App {
   display: flex;
   flex: 1;
-  font-family: 'Avenir', 'Courier New', Courier, monospace;
+  //font-family: 'Avenir', 'Courier New', Courier, monospace;
+  //font-family: 'Epilogue';
+  //font-style: normal;
 }
 
 div {
@@ -55,10 +57,10 @@ body.back-row-toggle .rain.back-row {
     transform: translateY(0vh);
   }
   75% {
-    transform: translateY(90vh);
+    transform: translateY(100vh);
   }
   100% {
-    transform: translateY(90vh);
+    transform: translateY(100vh);
   }
 }
 

@@ -36,6 +36,9 @@ $animate: all 0.4s ease-in-out;
 
 .header-item-text {
     padding: 1rem;
+    &:hover {
+        color: $primary-color;
+    }
 }
 
 .header-underline {
@@ -50,13 +53,13 @@ $animate: all 0.4s ease-in-out;
 }
 
 .header-text {
-    color: $primary-color;
-    font-weight: 500;
-    font-size: 1.25rem;
+    color: $body-text-color;
+    font-weight: 400;
+    font-size: 1rem;
 
     &:hover {
         cursor: pointer;
-        color: lighten($primary-color, 10);
+        color: $body-text-color;
     }
 }
 

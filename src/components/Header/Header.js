@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import './Header.scss'
-import { BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED, SCROLL_ELEMENT } from '../../constants/headerConstants'
+import { BIO, TECHNOLOGIES_USED, MY_WORK, SCROLL_ELEMENT } from '../../constants/headerConstants'
 import MobileNavDropdown from '../../assets/mobile-nav-dropdown.svg'
 import MobileCloseDropdown from '../../assets/mobile-close-dropdown.svg'
 
 const headerButtons = [
-    BIO, FAVOURTIE_PROJECTS, OTHER_PROJECTS, TECHNOLOGIES_USED
+    BIO, TECHNOLOGIES_USED, MY_WORK
 ]
 class Header extends Component {
     constructor(props) {
@@ -63,23 +63,16 @@ class Header extends Component {
                 behavior: 'smooth'
             })
             break
-        case FAVOURTIE_PROJECTS:
-            window.scrollTo({
-                top: pageHeight * 0.1,
-                left: 0,
-                behavior: 'smooth'
-            })
-            break
-        case OTHER_PROJECTS:
-            window.scrollTo({
-                top: pageHeight * 0.3,
-                left: 0,
-                behavior: 'smooth'
-            })
-            break
         case TECHNOLOGIES_USED:
             window.scrollTo({
-                top: pageHeight * 0.83,
+                top: pageHeight * 0.25,
+                left: 0,
+                behavior: 'smooth'
+            })
+            break
+        case MY_WORK:
+            window.scrollTo({
+                top: pageHeight * 0.45,
                 left: 0,
                 behavior: 'smooth'
             })

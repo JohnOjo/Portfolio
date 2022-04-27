@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Home.scss'
+import Header from '../../components/Header/Header'
+import Footnote from '../../components/Footnote/Footnote'
 import Angular from '../../assets/angular.svg'
 import AmazonWebServices from '../../assets/amazon_web_services.svg'
 import NodeJs from '../../assets/nodejs.svg'
@@ -13,7 +15,6 @@ import Prismic from '../../assets/prismic.svg'
 import Heroku from '../../assets/heroku.svg'
 import NameInCode from '../../assets/name_in_code.svg'
 import SendGrid from '../../assets/send_grid.png'
-import Header from '../../components/Header/Header'
 import JohnImage from '../../assets/john_image.svg'
 import TanEllipse from '../../assets/tan_ellipse.svg'
 import BrownEllipse from '../../assets/brown_ellipse.svg'
@@ -38,26 +39,24 @@ export default class Home extends Component {
                 <div className={'project-container'} key={index}>
                     <div className={'project-card-container'}>
                         <div className={'project-card-content'}>
-                            <div className={'chip'}>{'Favourite Projects'}</div>
+                            <div className={'project-technologies-used-list-container'}>
+                                {this.generateProjectTechnologies(project?.technologiesUsedImages)}
+                            </div>
                             <div className={'project-card-title'}>
                                 {project?.title}
                             </div>
                         </div>
                     </div>
                     <div className={'project-text-container'}>
-                        <div className={'project-title'}>{project?.title}</div>
                         {this.generateProjectInfo(project?.body)}
                         {project?.extraProjectInfo &&
-                <div className={'project-text-container'}>
-                    {this.generateProjectInfo(project?.extraProjectInfo)}
-                    <br/>
-                    {this.generateLinks(project?.links)}
-                </div>
+                        <div className={'project-text-container'}>
+                            {this.generateProjectInfo(project?.extraProjectInfo)}
+                            <br/>
+                            {this.generateLinks(project?.links)}
+                        </div>
                         }
                     </div>
-                </div>
-                <div className={'project-technologies-used-list-container'}>
-                    {this.generateProjectTechnologies(project?.technologiesUsedImages)}
                 </div>
             </div>
         )
@@ -67,7 +66,7 @@ export default class Home extends Component {
         if (whoIsItFor?.length > 0) {
             return whoIsItFor.map((bodyItem, index) => {
                 return(
-                    <li className={'list'} key={index}>{bodyItem}</li>
+                    <li className={'list'} key={index}><span className={'list-span'}>{bodyItem}</span></li>
                 )
             })
         }
@@ -99,15 +98,15 @@ export default class Home extends Component {
                 return(
                     <div className={'link-container'} key={index}>
                         <div className={'link-info'}>{link?.info}&nbsp;</div>
-                        <a className={'link'} href={link?.link} >{link?.link}</a>
+                        <a className={'link'} href={link?.link} target={'_blank'} rel={'noopener noreferrer'}>{link?.link}</a>
                     </div>
                 )
             })
         }
     }
 
-    handleChipClick() {
-        this.setState({ showFavouriteProjects: !this.state.showFavouriteProjects })
+    handleChipClick(showFavouriteProjects) {
+        this.setState({ showFavouriteProjects: showFavouriteProjects })
     }
 
     render() {
@@ -150,7 +149,7 @@ export default class Home extends Component {
                         link: 'https://github.com/Alfonzo28/ARL'
                     },
                 ],
-                technologiesUsedImages:[ReactImage, NodeJs, Express, SendGrid, Heroku],
+                technologiesUsedImages:[ReactImage, NodeJs, SendGrid, Heroku],
                 extraProjectInfo: ['What I enjoyed about this project was the amount of things I had to learn and figure out by myself as the sole developer. Having to build the front-end and back-end from scratch, having to host the application, having to set up CI/CD pipelines and other tasks. I had to solve problems by myself in terms of performance and what technologies would be most suitable. I had to take ownership and more responsibility in every aspect of the system. The experience really added to my skills and pushed me to keep on expanding my knowledge and continuously improve.']
             }
         ]
@@ -159,37 +158,37 @@ export default class Home extends Component {
             {
                 title: 'Medical Project',
                 body: [
-                    'Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
+                    'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Tasks: Builded up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
                     'Tech: React-Redux, NodeJs (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],
-                technologiesUsedImages:[ReactImage, NodeJs, Express, Postgresql, AmazonWebServices, Prismic],
+                technologiesUsedImages:[ReactImage, NodeJs, Postgresql, AmazonWebServices, Prismic],
             },
             {
                 title: 'Security/Auditing Project',
                 body: [
-                    'Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
+                    'Description: Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, NodeJs (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
-                technologiesUsedImages:[Angular, NodeJs, Express, MongoDB, AmazonWebServices],
+                technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             },
             {
                 title: 'Mining Project',
                 body: [
-                    'Opportunity application system for applying to projects provided by the mining sector.',
+                    'Description: Opportunity application system for applying to projects provided by the mining sector.',
                     'Tasks: Created front-end components and pages, created file upload and download functionality, setup server and created APIs to save and retrieve data.',
                     'Tech: Angular 9, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
                 ],
-                technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, AmazonWebServices],
+                technologiesUsedImages:[Angular, NodeJs, Postgresql, AmazonWebServices],
             },
             {
                 title: 'Financial Project',
                 body: [
-                    'Advertisment website for electronic safe that printed operational data and allowed users to store and dispense cash.',
+                    'Description: Advertisment website for electronic safe that printed operational data and allowed users to store and dispense cash.',
                     'Tasks: Search engine optimisation, created web application to describe application and created forms to capture specifications of safe and user details.',
                     'Tech: React',
                     'Worked in a team environment'
@@ -199,22 +198,22 @@ export default class Home extends Component {
             {
                 title: 'Reporting Project ',
                 body: [
-                    'Reporting system to view historical and forecasted data of a sector/industry given a scenario to measure the growth or decline of the sector/industry. Application is in English and Arabic (right to left reading).',
+                    'Description: Reporting system to view historical and forecasted data of a sector/industry given a scenario to measure the growth or decline of the sector/industry. Application is in English and Arabic (right to left reading).',
                     'Tasks: Created front-end components and pages, created GeoMap and plotted boundaries on communities, created light and dark mode, created graph filters and queries, wrote automated tests, created email server, created script to translate english to arabic and created APIs to save and retrieve data.',
                     'Tech: Angular 11, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
                     'Worked in a team environment.'
                 ],
-                technologiesUsedImages:[Angular, NodeJs, Express, Postgresql, MongoDB],
+                technologiesUsedImages:[Angular, NodeJs, Postgresql, MongoDB],
             },
             {
                 title: 'Security/Auditing Project',
                 body: [
-                    'Assessment system to assess controls in a system and view statistical data on the assessed controls.',
+                    'Description: Assessment system to assess controls in a system and view statistical data on the assessed controls.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, NodeJs (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
                 ],
-                technologiesUsedImages:[Angular, NodeJs, Express, MongoDB, AmazonWebServices],
+                technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             }
         ]
 
@@ -249,12 +248,13 @@ export default class Home extends Component {
                     <div className={'projects-title'}>{'Portfolio'}</div>
                     <div className={'my-work-title'}>{'MY WORK'}</div>
                     <div className={'chip-container'}>
-                        <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick()}>{'Favourite Projects'}</div>
-                        <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick()}>{'All Projects'}</div>
+                        <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(true)}>{'Favourite Projects'}</div>
+                        <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{'Other Projects'}</div>
                     </div>
                     <div className={'projects-title'}>{showFavouriteProjects ? 'Favourite Projects':'Other Projects'}</div>
                     {this.generateProjects(showFavouriteProjects ? favouriteProjects:otherProjects)}
                 </div>
+                <Footnote/>
             </div>
         )
     }

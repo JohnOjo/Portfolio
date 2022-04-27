@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import './Header.scss'
-import { BIO, TECHNOLOGIES_USED, MY_WORK, SCROLL_ELEMENT } from '../../constants/headerConstants'
+import { BIO, TECHNOLOGIES_USED, MY_WORK } from '../../constants/headerConstants'
 import MobileNavDropdown from '../../assets/mobile-nav-dropdown.svg'
 import MobileCloseDropdown from '../../assets/mobile-close-dropdown.svg'
 
@@ -32,6 +32,7 @@ class Header extends Component {
         this.setState({ isDesktop: window.innerWidth > 704 })
         window.innerWidth > 704 && this.setState({ dropdownOpen: false })
     }
+
     renderHeaderButton(headerButton) {
         return (
             <div
@@ -53,8 +54,6 @@ class Header extends Component {
     }
 
     handleClick(headerButton) {
-        const page = document.getElementById(SCROLL_ELEMENT)
-        const pageHeight = page.scrollHeight
         switch (headerButton) {
         case BIO:
             window.scrollTo({
@@ -65,14 +64,14 @@ class Header extends Component {
             break
         case TECHNOLOGIES_USED:
             window.scrollTo({
-                top: pageHeight * 0.25,
+                top: 500,
                 left: 0,
                 behavior: 'smooth'
             })
             break
         case MY_WORK:
             window.scrollTo({
-                top: pageHeight * 0.45,
+                top: 1000,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -111,7 +110,7 @@ class Header extends Component {
 
         return (
             <div className={'header'}>
-                <div className={'header-text-container'}>
+                <div className={'header-text-container'} onClick={() => this.handleClick(BIO)}>
                     <div className={'header-text header-title typed-out'}>
                         {'John Ojo'}
                     </div>

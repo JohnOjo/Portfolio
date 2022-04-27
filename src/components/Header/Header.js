@@ -71,7 +71,7 @@ class Header extends Component {
             break
         case MY_WORK:
             window.scrollTo({
-                top: 1000,
+                top: 1400,
                 left: 0,
                 behavior: 'smooth'
             })

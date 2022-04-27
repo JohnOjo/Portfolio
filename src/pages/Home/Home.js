@@ -38,7 +38,7 @@ export default class Home extends Component {
             <div className={'other-project-container'} key={index}>
                 <div className={'project-container'} key={index}>
                     <div className={'project-card-container'}>
-                        <div className={'project-card-content'}>
+                        <div className={'project-card-content slide'}>
                             <div className={'project-technologies-used-list-container'}>
                                 {this.generateProjectTechnologies(project?.technologiesUsedImages)}
                             </div>

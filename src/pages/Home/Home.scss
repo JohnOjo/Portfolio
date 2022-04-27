@@ -176,6 +176,17 @@
     background-image: linear-gradient(40deg, #5C2000 0%, rgba(0, 0, 0, 0.52) 50%), url('../../assets/project_image.svg');
 }
 
+.slide {
+    position: absolute;
+    left: -500px;
+    transition: 1s;
+}
+
+.project-container:hover .slide {
+    transition: 1s;
+    left: 150px;
+}
+
 .project-card-content {
     display: flex;
     flex-direction: column;

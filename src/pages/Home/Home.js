@@ -36,7 +36,7 @@ export default class Home extends Component {
     }
 
     render() {
-        const technologiesUsedTitle = 'Technologies Used'
+        const technologiesUsedTitle = 'Tricks Up My Sleeve'
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Intermediate Software Developer |'
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified'

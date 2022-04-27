@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Home.scss'
+import { TECHNOLOGIES_USED } from '../../constants/headerConstants'
 import Header from '../../components/Header/Header'
 import Footnote from '../../components/Footnote/Footnote'
 import Angular from '../../assets/angular.svg'
@@ -36,7 +37,6 @@ export default class Home extends Component {
     }
 
     render() {
-        const technologiesUsedTitle = 'Tricks Up My Sleeve'
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Intermediate Software Developer |'
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified'
@@ -68,7 +68,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className={'technologies-container'}>
-                    <div className={'technologies-title'}>{technologiesUsedTitle}</div>
+                    <div className={'technologies-title'}>{TECHNOLOGIES_USED}</div>
                     <div className={'technologies-list-container'}>
                         {this.generateTechnologies(technologiesUsed)}
                     </div>

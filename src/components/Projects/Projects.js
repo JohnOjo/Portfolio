@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './Projects.scss'
+import { MY_WORK } from '../../constants/headerConstants'
 import Angular from '../../assets/angular.svg'
 import AmazonWebServices from '../../assets/amazon_web_services.svg'
 import NodeJs from '../../assets/nodejs.svg'
@@ -221,7 +222,7 @@ class Projects extends Component {
         return (
             <div className={'projects-container'}>
                 <div className={'projects-title'}>{'Portfolio'}</div>
-                <div className={'my-work-title'}>{'MY WORK'}</div>
+                <div className={'my-work-title'}>{MY_WORK}</div>
                 <div className={'chip-container'}>
                     <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(true)}>{'Favourite Projects'}</div>
                     <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{'Other Projects'}</div>

@@ -131,7 +131,7 @@ class Projects extends Component {
                     'Description: Created a web application of a designer\'s portfolio to showcase their designs and experience.',
                     'Role: Fullstack developer.',
                     'Tasks: Setup cloud environment, setup CI/CD pipelines, developed fronted, developed backend, mobile responsiveness, setup email server.',
-                    'Tech: React (jsx), NodeJS (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
+                    'Tech: React (jsx), Node.js (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
                     'Worked as sole developer.'
                 ],
                 links:[
@@ -156,10 +156,10 @@ class Projects extends Component {
                 body: [
                     'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Tasks: Builded up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
-                    'Tech: React-Redux, NodeJs (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
+                    'Tech: React-Redux, Node.js (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],
-                chips: ['React', 'NodeJS', 'Postgresql', 'AWS', 'Prismic'],
+                chips: ['React', 'Node.js', 'Postgresql', 'AWS', 'Prismic'],
                 technologiesUsedImages:[ReactImage, NodeJs, Postgresql, AmazonWebServices, Prismic],
             },
             {
@@ -167,10 +167,10 @@ class Projects extends Component {
                 body: [
                     'Description: Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
-                    'Tech: Angular 9, NodeJs (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
+                    'Tech: Angular 9, Node.js (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
-                chips: ['React', 'NodeJS', 'MongoDB', 'AWS'],
+                chips: ['React', 'Node.js', 'MongoDB', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             },
             {
@@ -178,10 +178,10 @@ class Projects extends Component {
                 body: [
                     'Description: Opportunity application system for applying to projects provided by the mining sector.',
                     'Tasks: Created front-end components and pages, created file upload and download functionality, setup server and created APIs to save and retrieve data.',
-                    'Tech: Angular 9, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
+                    'Tech: Angular 9, Node.js (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
                 ],
-                chips: ['Angular', 'NodeJS', 'Postgresql', 'AWS'],
+                chips: ['Angular', 'Node.js', 'Postgresql', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, Postgresql, AmazonWebServices],
             },
             {
@@ -200,10 +200,10 @@ class Projects extends Component {
                 body: [
                     'Description: Reporting system to view historical and forecasted data of a sector/industry given a scenario to measure the growth or decline of the sector/industry. Application is in English and Arabic (right to left reading).',
                     'Tasks: Created front-end components and pages, created GeoMap and plotted boundaries on communities, created light and dark mode, created graph filters and queries, wrote automated tests, created email server, created script to translate english to arabic and created APIs to save and retrieve data.',
-                    'Tech: Angular 11, NodeJs (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
+                    'Tech: Angular 11, Node.js (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
                     'Worked in a team environment.'
                 ],
-                chips: ['Angular', 'NodeJS', 'Postgresql', 'MongoDB'],
+                chips: ['Angular', 'Node.js', 'Postgresql', 'MongoDB'],
                 technologiesUsedImages:[Angular, NodeJs, Postgresql, MongoDB],
             },
             {
@@ -211,10 +211,10 @@ class Projects extends Component {
                 body: [
                     'Description: Assessment system to assess controls in a system and view statistical data on the assessed controls.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
-                    'Tech: Angular 9, NodeJs (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
+                    'Tech: Angular 9, Node.js (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
                 ],
-                chips: ['Angular', 'NodeJS', 'MongoDB', 'AWS'],
+                chips: ['Angular', 'Node.js', 'MongoDB', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             }
         ]

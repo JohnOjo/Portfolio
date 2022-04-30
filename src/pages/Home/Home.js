@@ -11,8 +11,8 @@ import ReactImage from '../../assets/react.svg'
 import Postgresql from '../../assets/postgresql.svg'
 import MongoDB from '../../assets/mongo_db.svg'
 import Html from '../../assets/html.svg'
-import Typescript from '../../assets/typescript.svg'
-import Javacript from '../../assets/javacript.svg'
+import TypeScript from '../../assets/typescript.svg'
+import JavaScript from '../../assets/javascript.svg'
 import CSharp from '../../assets/csharp.png'
 import Css from '../../assets/css.svg'
 import Git from '../../assets/git.svg'
@@ -26,11 +26,40 @@ import BrownEllipse from '../../assets/brown_ellipse.svg'
 import Projects from '../../components/Projects/Projects'
 
 export default class Home extends Component {
-    generateTechnologies(partners) {
-        if (partners?.length > 0) {
-            return partners.map((partner, index) => {
+    componentDidMount() {
+        window.addEventListener('scroll', this.reveal)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.reveal)
+    }
+
+    reveal() {
+        const reveals = document.querySelectorAll('.reveal')
+
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight
+            const elementTop = reveals[i].getBoundingClientRect().top
+            const elementVisible = 80
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add('active')
+            } else {
+                reveals[i].classList.remove('active')
+            }
+        }
+    }
+
+    generateTechnologies(technologies) {
+        if (technologies?.length > 0) {
+            return technologies?.map((technology, index) => {
                 return(
-                    <img className={'technologies-used'} src={partner} alt={'technology'} key={index}/>
+                    <div className={'technology-used-container reveal'} key={index}>
+                        <img className={'technology-used'} src={technology?.logo} alt={'technology'}/>
+                        <div className={'technology-name'}>
+                            {technology?.name}
+                        </div>
+                    </div>
                 )
             })
         }
@@ -43,9 +72,12 @@ export default class Home extends Component {
         const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the the way things are done. Software development gave me the platform to do that.'
 
         const technologiesUsed = [
-            Angular, ReactImage, NodeJs, NetCore, AmazonWebServices, Postgresql,
-            MongoDB, Docker, Prismic, Express, Typescript, Javacript,
-            CSharp, Html, Css, Git
+            { name: 'Angular', logo:Angular }, { name: 'React', logo:ReactImage }, { name: 'Node.js', logo:NodeJs },
+            { name: '.NET Core', logo:NetCore }, { name: 'AWS', logo:AmazonWebServices }, { name: 'PostgreSQL', logo:Postgresql },
+            { name: 'MongoDB', logo:MongoDB }, { name: 'Docker', logo:Docker }, { name: 'Prismic', logo:Prismic },
+            { name: 'Express', logo:Express }, { name: 'TypeScript', logo:TypeScript }, { name: 'JavaScript', logo:JavaScript },
+            { name: 'C#', logo:CSharp }, { name: 'HTML', logo:Html }, { name: 'CSS', logo:Css },
+            { name: 'git', logo:Git }
         ]
 
         return (
@@ -67,7 +99,7 @@ export default class Home extends Component {
                         <img className={'about-me-image'} src={JohnImage} alt={'John'}/>
                     </div>
                 </div>
-                <div className={'technologies-container'}>
+                <div className={'technologies-container reveal'}>
                     <div className={'technologies-title'}>{TECHNOLOGIES_USED}</div>
                     <div className={'technologies-list-container'}>
                         {this.generateTechnologies(technologiesUsed)}

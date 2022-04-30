@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import './Projects.scss'
 import { MY_WORK } from '../../constants/headerConstants'
 import Angular from '../../assets/angular.svg'
@@ -232,10 +231,6 @@ class Projects extends Component {
             </div>
         )
     }
-}
-
-Projects.propTypes = {
-    history: PropTypes.object,
 }
 
 export default (withRouter(Projects))

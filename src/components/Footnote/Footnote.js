@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import './Footnote.scss'
 
 class Footnote extends Component {
@@ -17,10 +16,6 @@ class Footnote extends Component {
             </div>
         )
     }
-}
-
-Footnote.propTypes = {
-    history: PropTypes.object,
 }
 
 export default (withRouter(Footnote))

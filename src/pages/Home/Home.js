@@ -69,7 +69,7 @@ export default class Home extends Component {
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Intermediate Software Developer |'
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified'
-        const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the the way things are done. Software development gave me the platform to do that.'
+        const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the way things are done. Software development gave me the platform to do that.'
 
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },

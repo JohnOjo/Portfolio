@@ -74,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     min-width: 35.625rem;
     max-width: 35.625rem;
     height: 26rem;
@@ -95,32 +96,6 @@
     top: 200px;
 }
 
-@media only screen and (max-width: 1040px) {
-    .project-container {
-        flex-wrap: wrap;
-        row-gap: 8rem;
-    }
-}
-
-@media only screen and (max-width: 728px) {
-    .project-card-container {
-        min-width: 23.75rem;
-        max-width: 23.75rem;
-        height: 17.3rem;
-    }
-
-    .slide {
-        position: relative;
-        top: auto;
-        transition: 1s;
-    }
-    
-    .project-container:hover .slide {
-        transition: 1s;
-        top: auto;
-    }
-}
-
 .project-card-content {    
     position: absolute;
     display: flex;
@@ -136,14 +111,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-@media only screen and (max-width: 260px) {
-    .project-card-container  {
-        min-width: 8rem;
-        max-width: 8rem;
-        height: 8rem;
-    }
 }    
 
 .project-card-chips-container {
@@ -152,14 +119,6 @@
     justify-content: center;
     column-gap: 0.25rem;
     position: relative;
-}
-
-
-@media only screen and (max-width: 728px) {
-    .project-card-chips-container {
-        flex-wrap: wrap;
-        row-gap: 0.25rem;
-    }
 }
 
 .project-title {
@@ -230,27 +189,6 @@
     padding: 2% 4%;
 }
 
-@media only screen and (max-width: 470px) {
-    .chip-container {
-        flex-wrap: wrap;
-        row-gap: 1rem;
-    }
-    
-    .project-card-container {
-        min-width: 11.87rem;
-        max-width: 11.87rem;
-        height: 8.525rem;
-    }
-    
-    .project-technologies-used-list-container {
-        display: none;
-    }
-
-    .project-card-chips-container {
-        display: none;
-    }
-}
-
 .chip-flexible-width {
     display: flex;
     align-items: center;
@@ -289,4 +227,74 @@
 
 .chip-shade {
     background: rgba(239, 109, 88, 0.2);
+}
+
+@media only screen and (max-width: 1040px) {
+    .project-container {
+        flex-wrap: wrap;
+        row-gap: 8rem;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .project-card-container {
+        min-width: 23.75rem;
+        max-width: 23.75rem;
+        height: 17.3rem;
+    }
+
+    .project-card-title {
+        font-size: 1.4rem;
+    }
+
+    .slide {
+        position: relative;
+        top: auto;
+        transition: 1s;
+    }
+    
+    .project-container:hover .slide {
+        transition: 1s;
+        top: auto;
+    }
+
+    .list:hover {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    .project-card-container  {
+        min-width: 8rem;
+        max-width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .project-card-chips-container {
+        flex-wrap: wrap;
+        row-gap: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .chip-container {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .project-card-container {
+        min-width: 11.87rem;
+        max-width: 11.87rem;
+        height: 8.525rem;
+    }
+    
+    .project-technologies-used-list-container {
+        display: none;
+    }
+
+    .project-card-chips-container {
+        display: none;
+    }
 }

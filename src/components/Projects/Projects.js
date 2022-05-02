@@ -86,7 +86,7 @@ class Projects extends Component {
                 return(
                     <div className={'link-container'} key={index}>
                         <div className={'link-info'}>{link?.info}&nbsp;</div>
-                        <a className={'link'} href={link?.link} target={'_blank'} rel={'noopener noreferrer'}>{link?.link}</a>
+                        <a className={'link'} href={link?.link} target={'_blank'} rel={'noopener noreferrer'}>{link?.linkDisplayName}</a>
                     </div>
                 )
             })
@@ -109,10 +109,11 @@ class Projects extends Component {
 
     render() {
         const showFavouriteProjects = this.state.showFavouriteProjects
-
+        const favouriteProjectsTitle = 'Favourite Projects'
+        const otherProjectsTitle = 'Other Projects'
         const favouriteProjects = [
             {
-                title:'Bookings and Claims Project',
+                title: 'Bookings and Claims Project',
                 body: [
                     'Description: An office and events bookings,  as well as claims web application, following a microservices architecture. ',
                     'Role: Technical Team Lead, Managed 32 graduates',
@@ -120,26 +121,28 @@ class Projects extends Component {
                     'Tech: Angular 12, .NET 5, PostgreSQL, AWS (EC2, S3, RDS, ELB, Route53, Certificate Manager), Docker',
                     'Worked in a team environment'
                 ],
-                technologiesUsedImages:[Angular, NetCore, Postgresql, AmazonWebServices, Docker],
+                technologiesUsedImages: [Angular, NetCore, Postgresql, AmazonWebServices, Docker],
                 chips: ['Angular 12', '.NET 5', 'PostgreSQL', 'AWS', 'Docker'],
-                extraProjectInfo: ['What I loved about this project is that it encompassed everything it takes to build an application and be a software developer. Development, hosting, working in a large team, thinking of cost implications, project management, project scoping, solution architecture, weighing up which method would give the most optimal solution, sharing information so the graduates can learn more and mentoring them. I saw a different side to being a software developer other than just tech. You can learn any technology online or through a course, but learning to manage and understand people is a whole other different skill. It was a really great experience being on the project and the best part was seeing the graduates learn and grow into capable developers.']
+                extraProjectInfo: ['What I loved about this project is that it encompassed everything it takes to build an application and be a software developer. Development, hosting, working in a large team, thinking of cost implications, project management, project scoping, solution architecture, weighing up which method would give the most optimal solution, sharing information so the graduates can learn more and mentoring them. I saw a different side to being a software developer other than just tech. You can learn any technology online or through a course, but learning to manage and understand people is a vastly different skill. It was a really great experience being on the project and the best part was seeing the graduates learn and grow into capable developers.']
             },
             {
-                title:'Designer\'s Portfolio',
+                title: 'Designer\'s Portfolio',
                 body: [
                     'Description: Created a web application of a designer\'s portfolio to showcase their designs and experience.',
-                    'Role: Fullstack developer.',
+                    'Role: Full stack developer.',
                     'Tasks: Setup cloud environment, setup CI/CD pipelines, developed fronted, developed backend, mobile responsiveness, setup email server.',
                     'Tech: React (jsx), Node.js (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
                     'Worked as sole developer.'
                 ],
-                links:[
+                links: [
                     {
                         info: 'Link to website:',
+                        linkDisplayName: 'ARL',
                         link: 'https://alfonzo28.github.io/ARL/#/'
                     },
                     {
-                        info: 'Github repo (source code):',
+                        info: 'Link to Github repo:',
+                        linkDisplayName: 'Source Code',
                         link: 'https://github.com/Alfonzo28/ARL'
                     },
                 ],
@@ -154,6 +157,7 @@ class Projects extends Component {
                 title: 'Medical Project',
                 body: [
                     'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
+                    'Role: Full stack developer.',
                     'Tasks: Builded up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
                     'Tech: React-Redux, Node.js (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
@@ -165,6 +169,7 @@ class Projects extends Component {
                 title: 'Security/Auditing Project',
                 body: [
                     'Description: Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
+                    'Role: Full stack developer.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, Node.js (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
@@ -176,6 +181,7 @@ class Projects extends Component {
                 title: 'Mining Project',
                 body: [
                     'Description: Opportunity application system for applying to projects provided by the mining sector.',
+                    'Role: Full stack developer.',
                     'Tasks: Created front-end components and pages, created file upload and download functionality, setup server and created APIs to save and retrieve data.',
                     'Tech: Angular 9, Node.js (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
@@ -187,9 +193,10 @@ class Projects extends Component {
                 title: 'Financial Project',
                 body: [
                     'Description: Advertisment website for electronic safe that printed operational data and allowed users to store and dispense cash.',
+                    'Role: Front-end developer.',
                     'Tasks: Search engine optimisation, created web application to describe application and created forms to capture specifications of safe and user details.',
                     'Tech: React',
-                    'Worked in a team environment'
+                    'Worked in a team environment.'
                 ],
                 chips: ['React'],
                 technologiesUsedImages:[ReactImage],
@@ -198,6 +205,7 @@ class Projects extends Component {
                 title: 'Reporting Project ',
                 body: [
                     'Description: Reporting system to view historical and forecasted data of a sector/industry given a scenario to measure the growth or decline of the sector/industry. Application is in English and Arabic (right to left reading).',
+                    'Role: Full stack developer.',
                     'Tasks: Created front-end components and pages, created GeoMap and plotted boundaries on communities, created light and dark mode, created graph filters and queries, wrote automated tests, created email server, created script to translate english to arabic and created APIs to save and retrieve data.',
                     'Tech: Angular 11, Node.js (JavaScript), Express.js, Postgresql, Sequelize, MongoDB, Mongoose, CubeJs',
                     'Worked in a team environment.'
@@ -209,6 +217,7 @@ class Projects extends Component {
                 title: 'Security/Auditing Project',
                 body: [
                     'Description: Assessment system to assess controls in a system and view statistical data on the assessed controls.',
+                    'Role: Full stack developer.',
                     'Tasks: Setup server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, Node.js (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
@@ -223,10 +232,10 @@ class Projects extends Component {
                 <div className={'projects-title'}>{'Portfolio'}</div>
                 <div className={'my-work-title'}>{MY_WORK}</div>
                 <div className={'chip-container'}>
-                    <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(true)}>{'Favourite Projects'}</div>
-                    <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{'Other Projects'}</div>
+                    <div className={showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(true)}>{favouriteProjectsTitle}</div>
+                    <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{otherProjectsTitle}</div>
                 </div>
-                <div className={'projects-title'}>{showFavouriteProjects ? 'Favourite Projects':'Other Projects'}</div>
+                <div className={'projects-title'}>{showFavouriteProjects ? favouriteProjectsTitle : otherProjectsTitle}</div>
                 {this.generateProjects(showFavouriteProjects ? favouriteProjects:otherProjects)}
             </div>
         )

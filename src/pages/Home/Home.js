@@ -20,6 +20,7 @@ import Docker from '../../assets/docker.png'
 import Express from '../../assets/express.png'
 import Prismic from '../../assets/prismic.svg'
 import NameInCode from '../../assets/name_in_code.svg'
+import LinkedIn from '../../assets/linked-in.svg'
 import JohnImage from '../../assets/john_image.svg'
 import TanEllipse from '../../assets/tan_ellipse.svg'
 import BrownEllipse from '../../assets/brown_ellipse.svg'
@@ -71,6 +72,7 @@ export default class Home extends Component {
         const bioSubTitleStart = 'Intermediate Software Developer |'
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified'
         const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. Whether its front-end, back-end or cloud. Whether it\'s building custom software or integrating with existing services. Whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem solving to improve things and to improve the way things are done. Software development gave me the platform to do that.'
+        const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
 
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
@@ -94,6 +96,9 @@ export default class Home extends Component {
                             <div className={'about-me-subtitle-end'}>{bioSubTitleEnd}</div>
                         </div>
                         <div className={'about-me-body'}>{bioBody}</div>
+                        <a href={linkedInLink} target={'_blank'} rel={'noopener noreferrer'}>
+                            <img className={'linked-in-icon'} src={LinkedIn} alt={'LinkedIn'}></img>
+                        </a>
                     </div>
                     <div className={'about-me-image-container'}>
                         <img className={'about-me-tan-ellipse'} src={TanEllipse} alt={'Tan Ellipse'}/>

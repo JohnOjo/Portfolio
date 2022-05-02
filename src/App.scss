@@ -21,7 +21,7 @@ div {
 
 .circle-container {
   $particleNum: 200;
-  $particleColor: hsl(180, 100%, 80%);
+  $particleColor: $fire-fly-color;
 
   position: absolute;
   transform: translateY(-10vh);
@@ -34,8 +34,8 @@ div {
     border-radius: 50%;
     mix-blend-mode: screen;
     background-image: radial-gradient(
-      hsl(180, 100%, 80%),
-      hsl(180, 100%, 80%) 10%,
+      $fire-fly-color,
+      $fire-fly-color 10%,
       hsla(180, 100%, 80%, 0) 56%
     );
 

@@ -13,6 +13,7 @@ import Docker from '../../assets/docker.png'
 import Prismic from '../../assets/prismic.svg'
 import Heroku from '../../assets/heroku.svg'
 import SendGrid from '../../assets/send_grid.png'
+import { generateFireFlies } from '../../helpers/generalHelper'
 
 class Projects extends Component {
     constructor(props) {
@@ -229,6 +230,7 @@ class Projects extends Component {
 
         return (
             <div className={'projects-container'}>
+                {generateFireFlies()}
                 <div className={'projects-title'}>{'Portfolio'}</div>
                 <div className={'my-work-title'}>{MY_WORK}</div>
                 <div className={'chip-container'}>

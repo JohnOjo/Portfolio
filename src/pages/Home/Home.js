@@ -24,6 +24,7 @@ import JohnImage from '../../assets/john_image.svg'
 import TanEllipse from '../../assets/tan_ellipse.svg'
 import BrownEllipse from '../../assets/brown_ellipse.svg'
 import Projects from '../../components/Projects/Projects'
+import { generateFireFlies } from '../../helpers/generalHelper'
 
 export default class Home extends Component {
     componentDidMount() {
@@ -83,6 +84,7 @@ export default class Home extends Component {
         return (
             <div className={'App'}>
                 <Header/>
+                {generateFireFlies()}
                 <div className={'about-me-container'}>
                     <div className={'about-me-bio'}>
                         <img className={'name-in-code'} src={NameInCode} alt={'name'}></img>

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4de24415.chunk.css",
-    "main.js": "/Portfolio/static/js/main.03db156c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.03db156c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.db6e556c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.3bac0cda.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.3bac0cda.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c0f9fdbb.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c0f9fdbb.js.map",
     "static/js/2.5db624f3.chunk.js": "/Portfolio/static/js/2.5db624f3.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.f47a5dcd.chunk.js": "/Portfolio/static/js/3.f47a5dcd.chunk.js",
     "static/js/3.f47a5dcd.chunk.js.map": "/Portfolio/static/js/3.f47a5dcd.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.4de24415.chunk.css.map": "/Portfolio/static/css/main.4de24415.chunk.css.map",
+    "static/css/main.db6e556c.chunk.css.map": "/Portfolio/static/css/main.db6e556c.chunk.css.map",
     "static/js/2.5db624f3.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5db624f3.chunk.js.LICENSE.txt",
     "static/media/amazon_web_services.cc38dbe9.svg": "/Portfolio/static/media/amazon_web_services.cc38dbe9.svg",
     "static/media/angular.3f781d91.svg": "/Portfolio/static/media/angular.3f781d91.svg",
@@ -24,7 +24,7 @@
     "static/media/html.cf51b387.svg": "/Portfolio/static/media/html.cf51b387.svg",
     "static/media/javascript.61c1fa6b.svg": "/Portfolio/static/media/javascript.61c1fa6b.svg",
     "static/media/john_image.938b8f9f.svg": "/Portfolio/static/media/john_image.938b8f9f.svg",
-    "static/media/linked-in.b3ed1536.svg": "/Portfolio/static/media/linked-in.b3ed1536.svg",
+    "static/media/linked-in.d0156ca2.svg": "/Portfolio/static/media/linked-in.d0156ca2.svg",
     "static/media/mobile-close-dropdown.e7a5514a.svg": "/Portfolio/static/media/mobile-close-dropdown.e7a5514a.svg",
     "static/media/mobile-nav-dropdown.607fe35f.svg": "/Portfolio/static/media/mobile-nav-dropdown.607fe35f.svg",
     "static/media/mongo_db.4d0524e8.svg": "/Portfolio/static/media/mongo_db.4d0524e8.svg",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.c0f9fdbb.js",
     "static/js/2.5db624f3.chunk.js",
-    "static/css/main.4de24415.chunk.css",
-    "static/js/main.03db156c.chunk.js"
+    "static/css/main.db6e556c.chunk.css",
+    "static/js/main.3bac0cda.chunk.js"
   ]
 }

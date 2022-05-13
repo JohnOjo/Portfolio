@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import './Header.scss'
-import { BIO, TECHNOLOGIES_USED, MY_WORK } from '../../constants/headerConstants'
+import { BIO, TECHNOLOGIES_USED, MY_WORK, ABOUT_ME } from '../../constants/headerConstants'
 import MobileNavDropdown from '../../assets/mobile-nav-dropdown.svg'
 import MobileCloseDropdown from '../../assets/mobile-close-dropdown.svg'
 
 const headerButtons = [
-    BIO, TECHNOLOGIES_USED, MY_WORK
+    BIO, TECHNOLOGIES_USED, MY_WORK, ABOUT_ME
 ]
 class Header extends Component {
     constructor(props) {
@@ -72,6 +72,13 @@ class Header extends Component {
         case MY_WORK:
             window.scrollTo({
                 top: 1400,
+                left: 0,
+                behavior: 'smooth'
+            })
+            break
+        case ABOUT_ME:
+            window.scrollTo({
+                top: 1600,
                 left: 0,
                 behavior: 'smooth'
             })

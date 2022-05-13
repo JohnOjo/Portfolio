@@ -26,6 +26,7 @@ import TanEllipse from '../../assets/tan_ellipse.svg'
 import BrownEllipse from '../../assets/brown_ellipse.svg'
 import Projects from '../../components/Projects/Projects'
 import { generateFireFlies } from '../../helpers/generalHelper'
+import About from '../../components/About/About'
 
 export default class Home extends Component {
     componentDidMount() {
@@ -113,6 +114,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <Projects/>
+                <About/>
                 <Footnote/>
             </div>
         )

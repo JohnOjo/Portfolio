@@ -261,20 +261,18 @@
     .list:hover {
         transform: scale(1);
     }
-}
 
-@media only screen and (max-width: 260px) {
-    .project-card-container  {
-        min-width: 8rem;
-        max-width: 8rem;
-        height: 8rem;
-    }
-}
-
-@media only screen and (max-width: 728px) {
     .project-card-chips-container {
         flex-wrap: wrap;
         row-gap: 0.25rem;
+    }
+    
+    .project-technologies-used-list-container {
+        display: none;
+    }
+
+    .project-card-chips-container {
+        display: none;
     }
 }
 
@@ -289,12 +287,12 @@
         max-width: 11.87rem;
         height: 8.525rem;
     }
-    
-    .project-technologies-used-list-container {
-        display: none;
-    }
+}
 
-    .project-card-chips-container {
-        display: none;
+@media only screen and (max-width: 260px) {
+    .project-card-container  {
+        min-width: 8rem;
+        max-width: 8rem;
+        height: 8rem;
     }
 }

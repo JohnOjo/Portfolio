@@ -120,7 +120,11 @@
         width: 10.0356rem;
         height: 10.0356rem;
         margin-top: 10rem;
-    }  
+    }
+
+    .about-me-subtitle {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 460px) {

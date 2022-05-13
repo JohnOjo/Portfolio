@@ -1,0 +1,74 @@
+@import '../../constants/colours.scss';
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.25rem;
+    flex-direction: column;
+    background-color: $background-color;
+}
+
+.about-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 6%;
+}
+
+.about-header {
+    font-weight: 400;
+    font-size: 2rem;
+    color: $alternate-body-text-color;
+}
+
+.about-image-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+
+.about-image {
+    height: 100%;
+    width: 100%;
+}
+
+.about-text-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.75rem;
+    background: $body-text-color;
+}
+
+.about-text-title {
+    font-size: 1.5rem;    
+    text-align: center;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.about-blocks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 4%;
+}
+
+@media only screen and (max-width: 810px) {
+    .about-image-container {
+        grid-template-columns: 50%;
+    }
+}

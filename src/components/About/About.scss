@@ -14,17 +14,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4% 12%;
+    padding: 2% 6%;
 }
 
 .about-header {
-    font-weight: 600;
-    font-size: 2.25rem;
-    color: $primary-color;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $alternate-body-text-color;
 }
 
 .about-image-container {
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 50% 50%;
 }
 
@@ -41,8 +43,7 @@
     align-items: center;
     flex-direction: column;
     row-gap: 1.75rem;
-    background: #FFFFFF;
-    box-shadow: -0.0625rem 0.8125rem 1.25rem #F0F2F4;
+    background: $body-text-color;
 }
 
 .about-text-title {
@@ -61,6 +62,8 @@
 .about-blocks-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 4% 4%;
 }
 
@@ -68,14 +71,4 @@
     .about-image-container {
         grid-template-columns: 50%;
     }
-
-    // .about-image {
-    //     height: 50%;
-    //     width: 50%;
-    // }
-    
-    // .about-text-container {
-    //     height: 50%;
-    //     width: 50%;
-    // }
 }

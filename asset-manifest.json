@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5ccab589.chunk.css",
-    "main.js": "/Portfolio/static/js/main.22b5b9c1.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.22b5b9c1.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.8fae3abe.chunk.css",
+    "main.js": "/Portfolio/static/js/main.68890548.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.68890548.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.da9d09ef.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.da9d09ef.js.map",
     "static/js/2.f1ed9445.chunk.js": "/Portfolio/static/js/2.f1ed9445.chunk.js",
@@ -10,14 +10,16 @@
     "static/js/3.c9a3cc18.chunk.js": "/Portfolio/static/js/3.c9a3cc18.chunk.js",
     "static/js/3.c9a3cc18.chunk.js.map": "/Portfolio/static/js/3.c9a3cc18.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.5ccab589.chunk.css.map": "/Portfolio/static/css/main.5ccab589.chunk.css.map",
+    "static/css/main.8fae3abe.chunk.css.map": "/Portfolio/static/css/main.8fae3abe.chunk.css.map",
     "static/js/2.f1ed9445.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1ed9445.chunk.js.LICENSE.txt",
+    "static/media/John Ojo - CV.a62b02fc.pdf": "/Portfolio/static/media/John Ojo - CV.a62b02fc.pdf",
     "static/media/amazon_web_services.cc38dbe9.svg": "/Portfolio/static/media/amazon_web_services.cc38dbe9.svg",
     "static/media/angular.3f781d91.svg": "/Portfolio/static/media/angular.3f781d91.svg",
     "static/media/brown_ellipse.34e65961.svg": "/Portfolio/static/media/brown_ellipse.34e65961.svg",
     "static/media/Projects.scss": "/Portfolio/static/media/project_image.bef64184.svg",
     "static/media/csharp.fc430729.png": "/Portfolio/static/media/csharp.fc430729.png",
     "static/media/css.6854789a.svg": "/Portfolio/static/media/css.6854789a.svg",
+    "static/media/cv.af9fea68.svg": "/Portfolio/static/media/cv.af9fea68.svg",
     "static/media/docker.6d1afdb4.png": "/Portfolio/static/media/docker.6d1afdb4.png",
     "static/media/git.c62d7c4a.svg": "/Portfolio/static/media/git.c62d7c4a.svg",
     "static/media/heroku.76a583ed.svg": "/Portfolio/static/media/heroku.76a583ed.svg",
@@ -42,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.da9d09ef.js",
     "static/js/2.f1ed9445.chunk.js",
-    "static/css/main.5ccab589.chunk.css",
-    "static/js/main.22b5b9c1.chunk.js"
+    "static/css/main.8fae3abe.chunk.css",
+    "static/js/main.68890548.chunk.js"
   ]
 }

@@ -31,6 +31,13 @@ import { generateFireFlies } from '../../helpers/generalHelper'
 import About from '../../components/About/About'
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            longScrollDimensions: true,
+        }
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', this.reveal)
     }
@@ -68,6 +75,10 @@ export default class Home extends Component {
                 )
             })
         }
+    }
+
+    adjustScrollDimentionsForAllProjects(longScrollDimensions) {
+        this.setState({ longScrollDimensions: longScrollDimensions })
     }
 
     render() {
@@ -120,7 +131,7 @@ export default class Home extends Component {
                         {this.generateTechnologies(technologiesUsed)}
                     </div>
                 </div>
-                <Projects/>
+                <Projects adjustScrollDimentionsForAllProjects={(longScrollDimentions) => this.adjustScrollDimentionsForAllProjects(longScrollDimentions)}/>
                 <About/>
                 <Footnote/>
             </div>

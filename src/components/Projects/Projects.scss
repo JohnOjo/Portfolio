@@ -69,7 +69,8 @@
     color: $body-text-color;
 }
 
-.project-card-container {    
+.project-card-container {
+    margin: 0.25rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -218,7 +219,8 @@
     font-size: 1rem;
     color: $body-text-color;
     cursor: pointer;    
-    box-shadow: 0rem 0.1rem 0.1rem $primary-light-color;
+    box-shadow: 0rem 0.1rem 0.1rem $primary-light-color;    
+    margin: 0.5rem;
 
     &:hover {
         opacity: 0.8;

@@ -25,13 +25,14 @@ export default class About extends Component {
         if (aboutCards?.length > 0) {
             return aboutCards.map((aboutCard, index) => {
                 return (
-                    <div className={'about-image-container reveal'} key={index}>
-                        {index % 2 === 1 && <img className={'about-image'} src={aboutCard?.image} alt={'about'}/>}
-                        <div className={'about-text-container'}>
-                            <div className={'about-text-title'}>{aboutCard?.title}</div>
-                            <div className={'about-text'}>{aboutCard?.text}</div>
+                    <div className={'about-blocks-container'} key={index}>
+                        <div className={'about-image-container reveal'}>
+                            <div className={'about-text-container'}>
+                                <div className={'about-text-title'}>{aboutCard?.title}</div>
+                                <div className={'about-text'}>{aboutCard?.text}</div>
+                            </div>
+                            <img className={'about-image'} src={aboutCard?.image} alt={'about'}/>
                         </div>
-                        {index % 2 === 0 && <img className={'about-image'} src={aboutCard?.image} alt={'about'}/>}
                     </div>
                 )
             })
@@ -57,9 +58,7 @@ export default class About extends Component {
                 <div className={'about-header-container'}>
                     <div className={'about-header'}>{ABOUT_ME}</div>
                 </div>
-                <div className={'about-blocks-container'}>
-                    {this.generateAbout(aboutCards)}
-                </div>
+                {this.generateAbout(aboutCards)}
             </div>
         )
     }

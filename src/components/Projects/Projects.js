@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './Projects.scss'
 import { MY_WORK } from '../../constants/headerConstants'
 import Angular from '../../assets/angular.svg'
@@ -32,7 +33,7 @@ class Projects extends Component {
     renderProject(project, index) {
         return(
             <div className={'other-project-container'} key={index}>
-                <div className={'project-container'} key={index}>
+                <div className={'project-container'}>
                     <div className={'project-card-container'}>
                         <div className={'project-card-chips-container'}>
                             {this.generateChips(project?.chips)}
@@ -96,6 +97,7 @@ class Projects extends Component {
 
     handleChipClick(showFavouriteProjects) {
         this.setState({ showFavouriteProjects: showFavouriteProjects })
+        this.props.adjustScrollDimentionsForAllProjects(!showFavouriteProjects)
     }
 
     generateChips(chips) {
@@ -111,7 +113,7 @@ class Projects extends Component {
     render() {
         const showFavouriteProjects = this.state.showFavouriteProjects
         const favouriteProjectsTitle = 'Favourite Projects'
-        const otherProjectsTitle = 'Other Projects'
+        const otherProjectsTitle = 'All Projects'
         const favouriteProjects = [
             {
                 title: 'Bookings and Claims Project',
@@ -238,10 +240,14 @@ class Projects extends Component {
                     <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{otherProjectsTitle}</div>
                 </div>
                 <div className={'projects-title'}>{showFavouriteProjects ? favouriteProjectsTitle : otherProjectsTitle}</div>
-                {this.generateProjects(showFavouriteProjects ? favouriteProjects:otherProjects)}
+                {this.generateProjects(showFavouriteProjects ? favouriteProjects : [...favouriteProjects, ...otherProjects])}
             </div>
         )
     }
+}
+
+Projects.propTypes = {
+    adjustScrollDimentionsForAllProjects: PropTypes.func,
 }
 
 export default (withRouter(Projects))

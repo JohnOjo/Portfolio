@@ -1,16 +1,14 @@
 @import '../../constants/colours.scss';
 
 .about {
-    display: flex;
     align-items: center;
     justify-content: center;
-    row-gap: 0.25rem;
     flex-direction: column;
     background-color: $background-color;
+    padding: 2% 4%
 }
 
 .about-header-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -25,25 +23,15 @@
 
 .about-image-container {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 50% 50%;
-}
-
-.about-image {
-    height: 100%;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
 }
 
 .about-text-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 1.75rem;
-    background: $body-text-color;
+    background-size: contain;
 }
 
 .about-text-title {
@@ -52,7 +40,6 @@
 }
 
 .about-text {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -60,15 +47,14 @@
 }
 
 .about-blocks-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4% 4%;
+    padding: 0% 4%;
 }
 
 @media only screen and (max-width: 810px) {
     .about-image-container {
-        grid-template-columns: 50%;
+        grid-template-columns: 1fr;
     }
 }

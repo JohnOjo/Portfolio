@@ -3,7 +3,6 @@ import { ABOUT_ME } from '../../constants/headerConstants'
 import './About.scss'
 import About1 from '../../assets/teach.svg'
 import About2 from '../../assets/lecture.svg'
-import About3 from '../../assets/project_image.svg'
 
 export default class About extends Component {
     reveal() {

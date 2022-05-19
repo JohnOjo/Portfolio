@@ -75,7 +75,7 @@ class Projects extends Component {
         if (technologies?.length > 0) {
             return technologies.map((technology, index) => {
                 return(
-                    <img className={'project-technologies-used bounce-'+index} src={technology} alt={'technology'} key={index}/>
+                    <img className={'project-technologies-used'} src={technology} alt={'technology'} key={index}/>
                 )
             })
         }

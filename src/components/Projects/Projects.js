@@ -118,7 +118,7 @@ class Projects extends Component {
             {
                 title: 'Bookings and Claims Project',
                 body: [
-                    'Description: An office and events bookings,  as well as claims web application, following a microservices architecture. ',
+                    'Description: An office and events bookings and claims web application.',
                     'Role: Technical Team Lead, Managed 32 graduates',
                     'Tasks: Drew up solution architecture, setup cloud environment, deployments , setup server, managed team, scoped out project features, reviewed pull requests.',
                     'Tech: Angular 12, .NET 5, PostgreSQL, AWS (EC2, S3, RDS, ELB, Route53, Certificate Manager), Docker',
@@ -161,7 +161,7 @@ class Projects extends Component {
                 body: [
                     'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Role: Full stack developer.',
-                    'Tasks: Builded up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
+                    'Tasks: Built up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
                     'Tech: React-Redux, Node.js (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],

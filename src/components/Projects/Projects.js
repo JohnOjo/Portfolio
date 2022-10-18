@@ -14,6 +14,8 @@ import Docker from '../../assets/docker.png'
 import Prismic from '../../assets/prismic.svg'
 import Heroku from '../../assets/heroku.svg'
 import SendGrid from '../../assets/send_grid.png'
+import Redis from '../../assets/Redis_Logo.svg'
+import SqlServer from '../../assets/Sql_server.png'
 import { generateFireFlies } from '../../helpers/generalHelper'
 
 class Projects extends Component {
@@ -167,6 +169,18 @@ class Projects extends Component {
                 ],
                 chips: ['React', 'Node.js', 'Postgresql', 'AWS', 'Prismic'],
                 technologiesUsedImages:[ReactImage, NodeJs, Postgresql, AmazonWebServices, Prismic],
+            },
+            {
+                title: 'Insurance Project',
+                body: [
+                    'Description: Insurance application to collect and send applicant information through a broker.',
+                    'Role: Back-end developer.',
+                    'Tasks: Advised on technical and architectural improvements, created APIs to save and retrieve data, integrated with 3rd party APIs, wrote automated tests, and implemented data caching.',
+                    'Tech: .NET 3.1, Microsoft SQL, Redis, RabbitMQ, Docker, Kubernetes, Rancher',
+                    'Worked in a team environment.'
+                ],
+                chips: ['.NET 5', 'Microsoft SQL', 'Redis', 'Docker'],
+                technologiesUsedImages:[NetCore, SqlServer, Redis, Docker],
             },
             {
                 title: 'Security/Auditing Project',

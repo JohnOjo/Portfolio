@@ -191,7 +191,7 @@ class Projects extends Component {
                     'Tech: Angular 9, Node.js (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
-                chips: ['React', 'Node.js', 'MongoDB', 'AWS'],
+                chips: ['Angular', 'Node.js', 'MongoDB', 'AWS'],
                 technologiesUsedImages:[Angular, NodeJs, MongoDB, AmazonWebServices],
             },
             {

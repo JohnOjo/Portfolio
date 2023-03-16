@@ -21,6 +21,7 @@ import Express from '../../assets/express.png'
 import Prismic from '../../assets/prismic.svg'
 import NameInCode from '../../assets/name_in_code.svg'
 import LinkedIn from '../../assets/linked-in.svg'
+import LeetCode from '../../assets/leetcode.svg'
 import CvIcon from '../../assets/cv.svg'
 import JohnImage from '../../assets/john_image.png'
 import TanEllipse from '../../assets/tan_ellipse.svg'
@@ -87,7 +88,8 @@ export default class Home extends Component {
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified'
         const bioBody = 'What I love the most about my field is that it\'s all about solving problems, whether it\'s front-end, back-end, or cloud, whether it\'s building custom software or integrating with existing services, whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem-solving to improve things and improve the way things are done. Software development gives me the platform to do that.'
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
-
+        const leetCodeLink = 'https://leetcode.com/johnojo97/'
+        
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
             { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'PostgreSQL', logo: Postgresql },
@@ -116,6 +118,9 @@ export default class Home extends Component {
                             </a>
                             <a href={JohnOjoCV} target={'_blank'} rel={'noopener noreferrer'}>
                                 <img className={'contact-icon'} src={CvIcon} alt={'CV'}></img>
+                            </a>
+                            <a href={leetCodeLink} target={'_blank'} rel={'noopener noreferrer'}>
+                                <img className={'contact-icon'} src={LeetCode} alt={'LeetCode'}></img>
                             </a>
                         </div>
                     </div>

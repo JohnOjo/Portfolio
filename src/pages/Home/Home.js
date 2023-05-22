@@ -107,6 +107,9 @@ export default class Home extends Component {
                             <a href={JohnOjoCV} target={'_blank'} rel={'noopener noreferrer'}>
                                 <img className={'contact-icon'} src={CvIcon} alt={'CV'}></img>
                             </a>
+                            <a href={leetCodeLink} target={'_blank'} rel={'noopener noreferrer'}>
+                                <img className={'contact-icon'} src={LeetCode} alt={'LeetCode'}></img>
+                            </a>
                         </div>
                     </div>
                     <div className={'about-me-image-container'}>

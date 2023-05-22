@@ -32,13 +32,6 @@ import { generateFireFlies } from '../../helpers/generalHelper'
 import About from '../../components/About/About'
 
 export default class Home extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            longScrollDimensions: true,
-        }
-    }
-
     componentDidMount() {
         window.addEventListener('scroll', this.reveal)
     }
@@ -78,10 +71,6 @@ export default class Home extends Component {
         }
     }
 
-    adjustScrollDimentionsForAllProjects(longScrollDimensions) {
-        this.setState({ longScrollDimensions: longScrollDimensions })
-    }
-
     render() {
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Software Engineer |'
@@ -89,7 +78,6 @@ export default class Home extends Component {
         const bioBody = 'What I love the most about my field is that it\'s all about solving problems, whether it\'s front-end, back-end, or cloud, whether it\'s building custom software or integrating with existing services, whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem-solving to improve things and improve the way things are done. Software development gives me the platform to do that.'
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
         const leetCodeLink = 'https://leetcode.com/johnojo97/'
-        
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
             { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'PostgreSQL', logo: Postgresql },

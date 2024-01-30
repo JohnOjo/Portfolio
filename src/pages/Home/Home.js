@@ -19,6 +19,8 @@ import Git from '../../assets/git.svg'
 import Docker from '../../assets/docker.png'
 import Express from '../../assets/express.png'
 import Prismic from '../../assets/prismic.svg'
+import Java from '../../assets/java.svg'
+import Azure from '../../assets/azure.svg'
 import NameInCode from '../../assets/name_in_code.svg'
 import LinkedIn from '../../assets/linked-in.svg'
 import LeetCode from '../../assets/leetcode.svg'
@@ -81,10 +83,9 @@ export default class Home extends Component {
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
             { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'PostgreSQL', logo: Postgresql },
-            { name: 'MongoDB', logo: MongoDB }, { name: 'Docker', logo: Docker }, { name: 'Prismic', logo: Prismic },
+            { name: 'MongoDB', logo: MongoDB }, { name: 'Docker', logo: Docker }, { name: 'Java', logo: Java }, { name: 'Azure', logo: Azure },
             { name: 'Express', logo: Express }, { name: 'TypeScript', logo: TypeScript }, { name: 'JavaScript', logo: JavaScript },
             { name: 'C#', logo:  CSharp }, { name: 'HTML', logo:  Html }, { name: 'CSS', logo:  Css },
-            { name: 'Git', logo:  Git }
         ]
 
         return (

@@ -122,7 +122,7 @@ class Projects extends Component {
                 body: [
                     'Description: An office and events bookings and claims web application.',
                     'Role: Technical Team Lead, Managed 32 graduates',
-                    'Tasks: Drew up solution architecture, setup cloud environment, deployments , setup server, managed team, scoped out project features, reviewed pull requests.',
+                    'Tasks: Drew up solution architecture, set up cloud environment, deployments, set up server, managed team, scoped out project features, reviewed pull requests.',
                     'Tech: Angular 12, .NET 5, PostgreSQL, AWS (EC2, S3, RDS, ELB, Route53, Certificate Manager), Docker',
                     'Worked in a team environment'
                 ],
@@ -135,7 +135,7 @@ class Projects extends Component {
                 body: [
                     'Description: Created a web application of a designer\'s portfolio to showcase their designs and experience.',
                     'Role: Full stack developer.',
-                    'Tasks: Setup cloud environment, setup CI/CD pipelines, developed fronted, developed backend, mobile responsiveness, setup email server.',
+                    'Tasks: Set up cloud environment, set up CI/CD pipelines, developed fronted, developed backend, mobile responsiveness, set up email server.',
                     'Tech: React (jsx), Node.js (javascript), Express.js, SendGrid, Github Pages, Github Actions, Heroku',
                     'Worked as sole developer.'
                 ],
@@ -159,11 +159,23 @@ class Projects extends Component {
 
         const otherProjects = [
             {
+                title: 'Diff Tool',
+                body: [
+                    'Description: An application to compare the output of a mainframe system to be replaced and the new system that will replace the mainframe system.',
+                    'Role: Full stack developer.',
+                    'Tasks: DevOps, effort estimations, project requirements scoping, set up frontend, built CI/CD pipelines, user access management and migrations.',
+                    'Tech: Angular 15, Java, Quarkus, PostgreSQL, Azure, Docker, Helm',
+                    'Worked in a team environment'
+                ],
+                technologiesUsedImages: [Angular, Postgresql, AmazonWebServices, Docker],
+                chips: ['Angular', 'Java', 'PostgreSQL', 'Azure', 'Docker'],
+            },
+            {
                 title: 'Medical Project',
                 body: [
                     'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Role: Full stack developer.',
-                    'Tasks: Built up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
+                    'Tasks: Built-up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
                     'Tech: React-Redux, Node.js (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],
@@ -187,7 +199,7 @@ class Projects extends Component {
                 body: [
                     'Description: Report system for benchmarking, assessing and auditing, through the use of a generic front-end UI builder.',
                     'Role: Full stack developer.',
-                    'Tasks: Setup server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
+                    'Tasks: Set up server, created APIs to save and retrieve data, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, Node.js (javascript), Express.js, MongoDB, Mongoose, Jenkins, Redis',
                     'Worked in a team environment.'
                 ],
@@ -199,7 +211,7 @@ class Projects extends Component {
                 body: [
                     'Description: Opportunity application system for applying to projects provided by the mining sector.',
                     'Role: Full stack developer.',
-                    'Tasks: Created front-end components and pages, created file upload and download functionality, setup server and created APIs to save and retrieve data.',
+                    'Tasks: Created front-end components and pages, created file upload and download functionality, set up server and created APIs to save and retrieve data.',
                     'Tech: Angular 9, Node.js (JavaScript), Express.js, Postgresql, Sequelize, AWS S3',
                     'Worked in a team environment.'
                 ],
@@ -209,9 +221,9 @@ class Projects extends Component {
             {
                 title: 'Financial Project',
                 body: [
-                    'Description: Advertisment website for electronic safe that printed operational data and allowed users to store and dispense cash.',
+                    'Description: Advertisement website for electronic safe that printed operational data and allowed users to store and dispense cash.',
                     'Role: Front-end developer.',
-                    'Tasks: Search engine optimisation, created web application to describe application and created forms to capture specifications of safe and user details.',
+                    'Tasks: Search engine optimization, created web application to describe application and created forms to capture specifications of safe and user details.',
                     'Tech: React',
                     'Worked in a team environment.'
                 ],
@@ -235,7 +247,7 @@ class Projects extends Component {
                 body: [
                     'Description: Assessment system to assess controls in a system and view statistical data on the assessed controls.',
                     'Role: Full stack developer.',
-                    'Tasks: Setup server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
+                    'Tasks: Set up server, created APIs to save and retrieve data, created file upload and download functionality, created data filtering functionality, wrote automated tests and created dynamic UI components.',
                     'Tech: Angular 9, Node.js (JavaScript), Express.js, MongoDB, Mongoose, AWS S3',
                     'Worked in a team environment.'
                 ],

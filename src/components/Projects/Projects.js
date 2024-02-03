@@ -16,6 +16,8 @@ import Heroku from '../../assets/heroku.svg'
 import SendGrid from '../../assets/send_grid.png'
 import Redis from '../../assets/Redis_Logo.svg'
 import SqlServer from '../../assets/Sql_server.png'
+import Java from '../../assets/java.svg'
+import Azure from '../../assets/azure.svg'
 import { generateFireFlies } from '../../helpers/generalHelper'
 
 class Projects extends Component {
@@ -164,10 +166,10 @@ class Projects extends Component {
                     'Description: An application to compare the output of a mainframe system to be replaced and the new system that will replace the mainframe system.',
                     'Role: Full stack developer.',
                     'Tasks: DevOps, effort estimations, project requirements scoping, set up frontend, built CI/CD pipelines, user access management and migrations.',
-                    'Tech: Angular 15, Java, Quarkus, PostgreSQL, Azure, Docker, Helm',
+                    'Tech: Angular 15, Java, Quarkus, PostgreSQL, Azure, Docker, Helm, ArgoCD, Kubernetes',
                     'Worked in a team environment'
                 ],
-                technologiesUsedImages: [Angular, Postgresql, AmazonWebServices, Docker],
+                technologiesUsedImages: [Angular, Java, Postgresql, Azure, Docker],
                 chips: ['Angular', 'Java', 'PostgreSQL', 'Azure', 'Docker'],
             },
             {

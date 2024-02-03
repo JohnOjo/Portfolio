@@ -19,6 +19,7 @@ import Docker from '../../assets/docker.png'
 import Express from '../../assets/express.png'
 import Java from '../../assets/java.svg'
 import Azure from '../../assets/azure.svg'
+import Kubernetes from '../../kubernetes/azure.svg'
 import NameInCode from '../../assets/name_in_code.svg'
 import LinkedIn from '../../assets/linked-in.svg'
 import LeetCode from '../../assets/leetcode.svg'
@@ -75,15 +76,15 @@ export default class Home extends Component {
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Software Engineer |'
         const bioSubTitleEnd = 'Master\'s Student | AWS Certified | Microsoft Azure Certified'
-        const bioBody = 'What I love the most about my field is that it\'s all about solving problems, whether it\'s front-end, back-end, or cloud, whether it\'s building custom software or integrating with existing services, whether I have to use my existing knowledge of what I have learned over the years or Google it. My job is to solve problems. My passion is using problem-solving to improve things and improve the way things are done. Software development gives me the platform to do that.'
+        const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. I want to be part of a team that thinks in different ways and has different approaches to problem-solving while adding value to people. I want to be a bridge between customers and their solutions, I want to build software that inspires and makes an impact.'
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
         const leetCodeLink = 'https://leetcode.com/johnojo97/'
         const technologiesUsed = [
             { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
-            { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'PostgreSQL', logo: Postgresql },
-            { name: 'MongoDB', logo: MongoDB }, { name: 'Docker', logo: Docker }, { name: 'Java', logo: Java }, { name: 'Azure', logo: Azure },
+            { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'Azure', logo: Azure },
+            { name: 'Kubernetes', logo:  Kubernetes }, { name: 'Docker', logo: Docker }, { name: 'Java', logo: Java }, { name: 'PostgreSQL', logo: Postgresql },
             { name: 'Express', logo: Express }, { name: 'TypeScript', logo: TypeScript }, { name: 'JavaScript', logo: JavaScript },
-            { name: 'C#', logo:  CSharp }, { name: 'HTML', logo:  Html }, { name: 'CSS', logo:  Css },
+            { name: 'C#', logo:  CSharp }, { name: 'HTML', logo:  Html }, { name: 'CSS', logo:  Css }, { name: 'MongoDB', logo: MongoDB },
         ]
 
         return (

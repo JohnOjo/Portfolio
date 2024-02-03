@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.24c57096.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d831c149.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d831c149.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.a090cfbe.chunk.css",
+    "main.js": "/Portfolio/static/js/main.6bae4422.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.6bae4422.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.da9d09ef.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.da9d09ef.js.map",
     "static/js/2.f1ed9445.chunk.js": "/Portfolio/static/js/2.f1ed9445.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c9a3cc18.chunk.js": "/Portfolio/static/js/3.c9a3cc18.chunk.js",
     "static/js/3.c9a3cc18.chunk.js.map": "/Portfolio/static/js/3.c9a3cc18.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.24c57096.chunk.css.map": "/Portfolio/static/css/main.24c57096.chunk.css.map",
+    "static/css/main.a090cfbe.chunk.css.map": "/Portfolio/static/css/main.a090cfbe.chunk.css.map",
     "static/js/2.f1ed9445.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1ed9445.chunk.js.LICENSE.txt",
     "static/media/John Ojo - CV.ad1fed4b.pdf": "/Portfolio/static/media/John Ojo - CV.ad1fed4b.pdf",
     "static/media/Redis_Logo.237cd656.svg": "/Portfolio/static/media/Redis_Logo.237cd656.svg",
@@ -28,6 +28,7 @@
     "static/media/java.cd9a7278.svg": "/Portfolio/static/media/java.cd9a7278.svg",
     "static/media/javascript.acc4642f.svg": "/Portfolio/static/media/javascript.acc4642f.svg",
     "static/media/john_image.7dc82afe.png": "/Portfolio/static/media/john_image.7dc82afe.png",
+    "static/media/kubernetes.0a5e10be.svg": "/Portfolio/static/media/kubernetes.0a5e10be.svg",
     "static/media/lecture.9ff3b8f9.svg": "/Portfolio/static/media/lecture.9ff3b8f9.svg",
     "static/media/leetcode.8f9aa7b6.svg": "/Portfolio/static/media/leetcode.8f9aa7b6.svg",
     "static/media/linked-in.b3ed1536.svg": "/Portfolio/static/media/linked-in.b3ed1536.svg",
@@ -47,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.da9d09ef.js",
     "static/js/2.f1ed9445.chunk.js",
-    "static/css/main.24c57096.chunk.css",
-    "static/js/main.d831c149.chunk.js"
+    "static/css/main.a090cfbe.chunk.css",
+    "static/js/main.6bae4422.chunk.js"
   ]
 }

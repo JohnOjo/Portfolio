@@ -75,14 +75,14 @@ export default class Home extends Component {
     render() {
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Software Engineer |'
-        const bioSubTitleEnd = 'Master\'s Student | AWS Certified | Microsoft Azure Certified'
-        const bioBody = 'The thing I love the most about my field is that it\'s all about solving problems. I want to be part of a team that thinks in different ways and has different approaches to problem-solving while adding value to people. I want to be a bridge between customers and their solutions, I want to build software that inspires and makes an impact.'
+        const bioSubTitleEnd = 'AWS Certified | Microsoft Azure Certified'
+        const bioBody = 'What I love the most about my field is that it\'s all about solving problems. I want to be part of a team that thinks in different ways and has different approaches to problem-solving while adding value to people. I want to be a bridge between customers and their solutions, I want to build software that inspires and makes an impact.'
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
         const leetCodeLink = 'https://leetcode.com/johnojo97/'
         const technologiesUsed = [
-            { name: 'Angular', logo: Angular }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
+            { name: 'Java', logo: Java }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
             { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'Azure', logo: Azure },
-            { name: 'Kubernetes', logo:  Kubernetes }, { name: 'Docker', logo: Docker }, { name: 'Java', logo: Java }, { name: 'PostgreSQL', logo: Postgresql },
+            { name: 'Kubernetes', logo:  Kubernetes }, { name: 'Docker', logo: Docker }, { name: 'Angular', logo: Angular }, { name: 'PostgreSQL', logo: Postgresql },
             { name: 'Express', logo: Express }, { name: 'TypeScript', logo: TypeScript }, { name: 'JavaScript', logo: JavaScript },
             { name: 'C#', logo:  CSharp }, { name: 'HTML', logo:  Html }, { name: 'CSS', logo:  Css }, { name: 'MongoDB', logo: MongoDB },
         ]

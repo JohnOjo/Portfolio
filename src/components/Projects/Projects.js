@@ -18,6 +18,7 @@ import Redis from '../../assets/Redis_Logo.svg'
 import SqlServer from '../../assets/Sql_server.png'
 import Java from '../../assets/java.svg'
 import Azure from '../../assets/azure.svg'
+import Kubernetes from '../../assets/kubernetes.svg'
 import { generateFireFlies } from '../../helpers/generalHelper'
 
 class Projects extends Component {
@@ -124,7 +125,7 @@ class Projects extends Component {
                 body: [
                     'Description: An office and events bookings and claims web application.',
                     'Role: Technical Team Lead, Managed 32 graduates',
-                    'Tasks: Drew up solution architecture, set up cloud environment, deployments, set up server, managed team, scoped out project features, reviewed pull requests.',
+                    'Tasks: Drew up solution architecture, set up the cloud environment, deployments, set up server, managed team, scoped out project features, reviewed pull requests.',
                     'Tech: Angular 12, .NET 5, PostgreSQL, AWS (EC2, S3, RDS, ELB, Route53, Certificate Manager), Docker',
                     'Worked in a team environment'
                 ],
@@ -161,23 +162,35 @@ class Projects extends Component {
 
         const otherProjects = [
             {
+                title: 'Car Part and Order Number Refresh',
+                body: [
+                    'Description: An application to manually refresh car parts and orders data when there are updates.',
+                    'Role: Full stack developer.',
+                    'Tasks: DevOps, unit testing, created frontend interface, APIs, built CI/CD pipelines, collaborated with designers, effort estimations and project requirements scoping.',
+                    'Tech: Angular 17, Java, Kubernetes, Quarkus, Azure, Docker, Helm, ArgoCD',
+                    'Worked in a team environment'
+                ],
+                technologiesUsedImages: [Angular, Java, Docker, Azure, Kubernetes],
+                chips: ['Angular', 'Java', 'Docker', 'Azure', 'Kubernetes'],
+            },
+            {
                 title: 'Diff Tool',
                 body: [
                     'Description: An application to compare the output of a mainframe system to be replaced and the new system that will replace the mainframe system.',
                     'Role: Full stack developer.',
-                    'Tasks: DevOps, effort estimations, project requirements scoping, set up frontend, built CI/CD pipelines, user access management and migrations.',
-                    'Tech: Angular 15, Java, Quarkus, PostgreSQL, Azure, Docker, Helm, ArgoCD, Kubernetes',
+                    'Tasks: DevOps, created frontend, built CI/CD pipelines, unit testing, created APIs, create database queries and migrations, effort estimations and project requirements scoping.',
+                    'Tech: Angular 15, Java, Kubernetes, Quarkus, PostgreSQL, Azure, Docker, Helm, ArgoCD',
                     'Worked in a team environment'
                 ],
-                technologiesUsedImages: [Angular, Java, Postgresql, Azure, Docker],
-                chips: ['Angular', 'Java', 'PostgreSQL', 'Azure', 'Docker'],
+                technologiesUsedImages: [Angular, Java, Postgresql, Azure, Kubernetes],
+                chips: ['Angular', 'Java', 'PostgreSQL', 'Azure', 'Kubernetes'],
             },
             {
                 title: 'Medical Project',
                 body: [
                     'Description: Medical application that stored patient appointments and data and allowed researchers and doctors to view patient information.',
                     'Role: Full stack developer.',
-                    'Tasks: Built-up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
+                    'Tasks: Built up CMS, wrote automated tests, created APIs to get, update and add patient data and created dynamic frontend to handle CMS content, edit patient data and view patient data.',
                     'Tech: React-Redux, Node.js (TypeScript), Express.js, Postgresql, TypeORM, AWS S3, Prismic',
                     'Worked in a team environment.'
                 ],

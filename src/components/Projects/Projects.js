@@ -281,7 +281,7 @@ class Projects extends Component {
                     <div className={!showFavouriteProjects ? 'chip' : 'chip chip-shade'} onClick={() => this.handleChipClick(false)}>{otherProjectsTitle}</div>
                 </div>
                 <div className={'projects-title'}>{showFavouriteProjects ? favouriteProjectsTitle : otherProjectsTitle}</div>
-                {this.generateProjects(showFavouriteProjects ? favouriteProjects : [...favouriteProjects, ...otherProjects])}
+                {this.generateProjects(showFavouriteProjects ? favouriteProjects : [...otherProjects, ...favouriteProjects])}
             </div>
         )
     }

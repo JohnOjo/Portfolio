@@ -75,7 +75,7 @@ export default class Home extends Component {
     render() {
         const bioTitle = 'Hi! I\'m John Ojo and I solve problems'
         const bioSubTitleStart = 'Software Engineer |'
-        const bioSubTitleEnd = 'AWS Certified | Microsoft Azure Certified'
+        const bioSubTitleEnd = ' AWS Certified | Microsoft Azure Certified'
         const bioBody = 'What I love the most about my field is that it\'s all about solving problems. I want to be part of a team that thinks in different ways and has different approaches to problem-solving while adding value to people. I want to be a bridge between customers and their solutions, I want to build software that inspires and makes an impact.'
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
         const leetCodeLink = 'https://leetcode.com/johnojo97/'

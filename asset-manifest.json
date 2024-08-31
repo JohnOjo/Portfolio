@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.65766eec.chunk.css",
-    "main.js": "/Portfolio/static/js/main.7874ad36.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.7874ad36.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.8fa163ca.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f5a88888.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f5a88888.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.da9d09ef.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.da9d09ef.js.map",
     "static/js/2.f1ed9445.chunk.js": "/Portfolio/static/js/2.f1ed9445.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c9a3cc18.chunk.js": "/Portfolio/static/js/3.c9a3cc18.chunk.js",
     "static/js/3.c9a3cc18.chunk.js.map": "/Portfolio/static/js/3.c9a3cc18.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.65766eec.chunk.css.map": "/Portfolio/static/css/main.65766eec.chunk.css.map",
+    "static/css/main.8fa163ca.chunk.css.map": "/Portfolio/static/css/main.8fa163ca.chunk.css.map",
     "static/js/2.f1ed9445.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1ed9445.chunk.js.LICENSE.txt",
     "static/media/John Ojo - CV.4aeb9b53.pdf": "/Portfolio/static/media/John Ojo - CV.4aeb9b53.pdf",
     "static/media/Redis_Logo.237cd656.svg": "/Portfolio/static/media/Redis_Logo.237cd656.svg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.da9d09ef.js",
     "static/js/2.f1ed9445.chunk.js",
-    "static/css/main.65766eec.chunk.css",
-    "static/js/main.7874ad36.chunk.js"
+    "static/css/main.8fa163ca.chunk.css",
+    "static/js/main.f5a88888.chunk.js"
   ]
 }

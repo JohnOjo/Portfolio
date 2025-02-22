@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2a90f356.chunk.css",
-    "main.js": "/Portfolio/static/js/main.1ec25089.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.1ec25089.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.1e4b50dd.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0a479d6f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0a479d6f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.da9d09ef.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.da9d09ef.js.map",
     "static/js/2.f1ed9445.chunk.js": "/Portfolio/static/js/2.f1ed9445.chunk.js",
@@ -10,9 +10,9 @@
     "static/js/3.c9a3cc18.chunk.js": "/Portfolio/static/js/3.c9a3cc18.chunk.js",
     "static/js/3.c9a3cc18.chunk.js.map": "/Portfolio/static/js/3.c9a3cc18.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.2a90f356.chunk.css.map": "/Portfolio/static/css/main.2a90f356.chunk.css.map",
+    "static/css/main.1e4b50dd.chunk.css.map": "/Portfolio/static/css/main.1e4b50dd.chunk.css.map",
     "static/js/2.f1ed9445.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1ed9445.chunk.js.LICENSE.txt",
-    "static/media/John Ojo - CV.36636e91.pdf": "/Portfolio/static/media/John Ojo - CV.36636e91.pdf",
+    "static/media/John Ojo - CV.1dc6ad04.pdf": "/Portfolio/static/media/John Ojo - CV.1dc6ad04.pdf",
     "static/media/Redis_Logo.237cd656.svg": "/Portfolio/static/media/Redis_Logo.237cd656.svg",
     "static/media/Sql_server.bbff8d67.png": "/Portfolio/static/media/Sql_server.bbff8d67.png",
     "static/media/amazon_web_services.fc7f70d0.svg": "/Portfolio/static/media/amazon_web_services.fc7f70d0.svg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.da9d09ef.js",
     "static/js/2.f1ed9445.chunk.js",
-    "static/css/main.2a90f356.chunk.css",
-    "static/js/main.1ec25089.chunk.js"
+    "static/css/main.1e4b50dd.chunk.css",
+    "static/js/main.0a479d6f.chunk.js"
   ]
 }

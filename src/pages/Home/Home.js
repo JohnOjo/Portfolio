@@ -20,6 +20,7 @@ import Express from '../../assets/express.png'
 import Java from '../../assets/java.svg'
 import Azure from '../../assets/azure.svg'
 import Kubernetes from '../../assets/kubernetes.svg'
+import SpringBoot from '../../assets/Spring_Boot.svg.png'
 import NameInCode from '../../assets/name_in_code.svg'
 import LinkedIn from '../../assets/linked-in.svg'
 import LeetCode from '../../assets/leetcode.svg'
@@ -80,7 +81,7 @@ export default class Home extends Component {
         const linkedInLink = 'https://www.linkedin.com/in/john-ojo-b2b24115b/'
         const leetCodeLink = 'https://leetcode.com/johnojo97/'
         const technologiesUsed = [
-            { name: 'Java', logo: Java }, { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
+            { name: 'Java', logo: Java }, { name: 'Spring Boot', logo: SpringBoot },  { name: 'React', logo: ReactImage }, { name: 'Node.js', logo: NodeJs },
             { name: '.NET Core', logo: NetCore }, { name: 'AWS', logo: AmazonWebServices }, { name: 'Azure', logo: Azure },
             { name: 'Kubernetes', logo:  Kubernetes }, { name: 'Docker', logo: Docker }, { name: 'Angular', logo: Angular }, { name: 'PostgreSQL', logo: Postgresql },
             { name: 'Express', logo: Express }, { name: 'TypeScript', logo: TypeScript }, { name: 'JavaScript', logo: JavaScript },

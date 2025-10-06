@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.55344809.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d940e354.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d940e354.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.d1c9c7e7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.a360f664.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.a360f664.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.da9d09ef.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.da9d09ef.js.map",
     "static/js/2.f1ed9445.chunk.js": "/Portfolio/static/js/2.f1ed9445.chunk.js",
@@ -10,11 +10,10 @@
     "static/js/3.c9a3cc18.chunk.js": "/Portfolio/static/js/3.c9a3cc18.chunk.js",
     "static/js/3.c9a3cc18.chunk.js.map": "/Portfolio/static/js/3.c9a3cc18.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.55344809.chunk.css.map": "/Portfolio/static/css/main.55344809.chunk.css.map",
+    "static/css/main.d1c9c7e7.chunk.css.map": "/Portfolio/static/css/main.d1c9c7e7.chunk.css.map",
     "static/js/2.f1ed9445.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1ed9445.chunk.js.LICENSE.txt",
     "static/media/John Ojo - CV.1dc6ad04.pdf": "/Portfolio/static/media/John Ojo - CV.1dc6ad04.pdf",
     "static/media/Redis_Logo.237cd656.svg": "/Portfolio/static/media/Redis_Logo.237cd656.svg",
-    "static/media/Spring_Boot.svg.df98739a.png": "/Portfolio/static/media/Spring_Boot.svg.df98739a.png",
     "static/media/Sql_server.bbff8d67.png": "/Portfolio/static/media/Sql_server.bbff8d67.png",
     "static/media/amazon_web_services.fc7f70d0.svg": "/Portfolio/static/media/amazon_web_services.fc7f70d0.svg",
     "static/media/angular.3f781d91.svg": "/Portfolio/static/media/angular.3f781d91.svg",
@@ -42,6 +41,7 @@
     "static/media/postgresql.e407ebb1.svg": "/Portfolio/static/media/postgresql.e407ebb1.svg",
     "static/media/prismic.829a7bc1.svg": "/Portfolio/static/media/prismic.829a7bc1.svg",
     "static/media/react.928f956d.svg": "/Portfolio/static/media/react.928f956d.svg",
+    "static/media/spring_boot.730b0ccd.svg": "/Portfolio/static/media/spring_boot.730b0ccd.svg",
     "static/media/tan_ellipse.d9a8237a.svg": "/Portfolio/static/media/tan_ellipse.d9a8237a.svg",
     "static/media/teach.8dfcdbd3.svg": "/Portfolio/static/media/teach.8dfcdbd3.svg",
     "static/media/typescript.e0cf5672.svg": "/Portfolio/static/media/typescript.e0cf5672.svg"
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.da9d09ef.js",
     "static/js/2.f1ed9445.chunk.js",
-    "static/css/main.55344809.chunk.css",
-    "static/js/main.d940e354.chunk.js"
+    "static/css/main.d1c9c7e7.chunk.css",
+    "static/js/main.a360f664.chunk.js"
   ]
 }
